@@ -1,13 +1,116 @@
-body {
+/* Neste arquivo css, vamos apenas linkar todos os outros arquivos CSS3 e deixar só as configurações principais*/ 
+
+
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. font & reset css
+02. reset
+03. global styles
+--------------------------------------------- */
+
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+  reset
+*/
+
+* {
+    box-sizing: border-box;
+    transition-duration: 0.6s;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: var(--color-background);
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+fieldset {
+  border: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--color-text);
+}
+
+/*
+---------------------------------------------
+global styles
+---------------------------------------------
+*/
+:root {
+  --color-background: rgb(243, 243, 247);
+  --color-primary: rgba(30, 236, 88, 1);
+  --color-title: rgba(64, 64, 64, 1);
+  --color-text: rgba(88, 88, 88, 1);
+  --color-secondary-title: rgba(105, 105, 105, 1);
+  --color-secondary-text: rgba(157, 157, 157, 1);
+
+  font-size: 62.5%; /* 10px */
+}
+
+html, body {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+em {
+  font-style: normal;
+}
+
+small {
+  text-align: center;
+  opacity: 0.9;
 }
