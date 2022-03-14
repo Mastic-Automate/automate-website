@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import RegularSection from './components/RegularSection';
 
 import './App.css'
+import Footer from './components/Footer';
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <RegularSection imgSide="right" src="/img/config-screen.png" alt="imagem do celular na tela de sincronização" title="Fácil de configurar" text={<p>Automatize o crescimento da sua planta</p>} />
 
       <RegularSection imgSide="left" src="/img/monitoring-screen.png" alt="imagem do celular na tela de monitoramento" title="Cuidados especiais" text={<p>Monitore sua planta constantemente</p>} />
+
+      <Footer />
     </div>
   );
 }

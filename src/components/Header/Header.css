@@ -9,7 +9,7 @@ header {
     
     padding: 3rem 2.5rem;
     
-    position: absolute;
+    position: fixed;
     max-height: 10rem;
     left: 0px;
     right: 0px;

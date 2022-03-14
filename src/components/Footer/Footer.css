@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 80vh;
+    width: 100vw;
+}
+
+footer h3 {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 5.859rem;
+    color: var(--color-text);
+    margin-bottom: 8.2rem;
+}
+
+footer p {
+    line-height: 5.273rem;
+    font-size: 4.5rem;
+    color: var(--color-secondary-text);
+    max-width: 1216px;
+}
