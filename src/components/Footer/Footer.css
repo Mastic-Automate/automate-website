@@ -16,6 +16,7 @@ footer h3 {
 }
 
 footer p {
+    padding-left: 30px;
     line-height: 5.273rem;
     font-size: 4.5rem;
     color: var(--color-secondary-text);

@@ -8,13 +8,13 @@ function RegularSection(props) {
         return (
             <section className="regular-section">
                 <TextElement title={title} text={text} /> 
-                <img src={src} alt={alt} />
+                <img src={src} alt={alt} className />
             </section> 
         )
     } 
 
     return ( 
-        <section className="regular-section">
+        <section className={`regular-section ${imgSide}`}>
             <img src={src} alt={alt} />
             <TextElement title={title} text={text} />
         </section>

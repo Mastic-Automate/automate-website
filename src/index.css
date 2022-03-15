@@ -114,3 +114,23 @@ small {
   text-align: center;
   opacity: 0.9;
 }
+
+
+@media (max-width: 1280px) {
+  :root {
+    font-size: 55%; 
+  }
+}
+
+@media (max-width: 980px) {
+  :root {
+    font-size: 45%; 
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    font-size: 35%;
+    text-align: center;
+  }
+}
