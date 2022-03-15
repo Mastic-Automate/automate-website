@@ -1,6 +1,8 @@
 import './App.css'
+import { Image } from 'react';
 import LandingPage from './components/LandingPage';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+
 
 
 function App() {
