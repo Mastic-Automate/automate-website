@@ -10,7 +10,8 @@ header {
     padding: 3rem 2.5rem;
     
     position: fixed;
-    max-height: 10rem;
+    min-height: 70px;
+    height: 10rem;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -25,13 +26,29 @@ header .logo {
 
 header a {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 2.5rem;
     line-height: 2.1rem;
     color: white;
 }
 
+header nav {
+    min-width: 365px;
+    max-width: 40%;
+}
+
 header ul {
     display: flex;
-    min-width: 38.1rem;
+    width: 100%;
+    max-width: 365px;
     justify-content: space-around;
+}
+
+@media (max-width: 980px) {
+    header nav {
+        min-width: 265px;
+    }
+
+    header ul {
+        max-width: 265px;
+    }
 }

@@ -25,7 +25,37 @@
 
 }
 
-.section-text img {
-    width: max-content;
-    max-height: max-content;
+@media (max-width: 788px) {
+    .section-text h1 {
+        max-width: 50%;
+        font-size: 6rem;
+    }
+    .section-text p {
+        max-width: 50%;
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 788px) {
+    .section-text h1 {
+        max-width: 50%;
+        font-size: 5.5rem;
+    }
+    .section-text p {
+        max-width: 50%;
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .section-text {
+        width: 100%;
+    }
+
+    .section-text h1 {
+        max-width: 100%;
+    }
+    .section-text p {
+        max-width: 100%;
+    }
 }

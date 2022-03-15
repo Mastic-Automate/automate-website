@@ -1,6 +1,28 @@
 .regular-section {
     min-height: calc(100vh - 10rem);
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.regular-section img {
+    max-width: 45%;
+    max-height: calc(100% - 10rem);
+}
+
+@media (max-width: 700px) {
+    .regular-section {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .regular-section.right {
+        flex-direction: column;
+    }
+
+    .regular-section img {
+        max-width: 100%;
+        max-height: calc(50vh - 10rem);
+    }
 }

@@ -2,11 +2,12 @@
     min-height: calc(100vh - 10rem);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .hero img {
     max-width: 45vw;
+    max-height: calc(100vh - 10rem);
 }
 
 .hero .section-text h1 {
@@ -21,4 +22,20 @@
     line-height: 6.445rem;
     font-weight: 400;
     color: var(--color-text);
+}
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .hero.right {
+        flex-direction: column;
+    }
+
+    .hero img {
+        max-width: 100%;
+        max-height: calc(50vh - 10rem);
+    }
 }
