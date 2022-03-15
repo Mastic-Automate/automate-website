@@ -1,8 +1,8 @@
 import Header from './components/Header'
 import Hero from './components/Hero';
 import RegularSection from './components/RegularSection';
-
-import './App.css'
+import { Image } from 'react';
+import './App.css';
 import Footer from './components/Footer';
 
 
