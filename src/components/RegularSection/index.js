@@ -1,3 +1,4 @@
+import React from "react";
 import TextElement from "../TextElement";
 import './RegularSection.css'
 

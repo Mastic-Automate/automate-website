@@ -1,23 +1,21 @@
 import React from "react";
-import './Header.css'
+import './AutomateHeader.css'
 
-function Header() {
+export default function AutomateHeader() {
     return (
-        <header>
+        <header className="automate">
             <div className="logo">
             </div>
             <nav>
                 <ul>
                     <li>
-                        <a href="">Nosso Produto</a>
+                        <a href="/">Nosso Produto</a>
                     </li>
                     <li>
-                        <a href="">Sobre nós</a>
+                        <a href="/">Sobre nós</a>
                     </li>
                 </ul>
             </nav>
         </header>
     );
-  }
-  
-  export default Header;
+}

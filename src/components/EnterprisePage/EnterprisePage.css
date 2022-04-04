@@ -1,0 +1,7 @@
+div#enterprise-container {
+    background-color: #1B1A27;
+    width: fit-content;
+    height: fit-content;
+    min-width: 100vw;
+    min-height: 100vh;
+}
