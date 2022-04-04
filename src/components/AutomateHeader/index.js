@@ -1,5 +1,7 @@
 import React from "react";
 import './AutomateHeader.css'
+import './Header.css';
+
 
 export default function AutomateHeader() {
     return (

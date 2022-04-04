@@ -5,7 +5,8 @@ import EnterprisePage from './components/EnterprisePage';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
         <BrowserRouter>
@@ -18,5 +19,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
