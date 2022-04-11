@@ -5,3 +5,29 @@ div#enterprise-container {
     min-width: 100vw;
     min-height: 100vh;
 }
+
+div#enterprise-container section.hero {
+    min-height: calc(99vh - 10rem);
+    min-width: 700px;
+    background-image: url('../../../public/img/to-the-stars.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+    background-position-x: -45rem;
+    background-position-y: center;
+}
+
+div#enterprise-container .hero h1{
+    font-size: 9rem;
+    margin-bottom: 1rem;
+    font-family: Nazalation;
+    color: rgba(185, 216, 129, 1);
+}
+
+div#enterprise-container .hero p{
+    text-align: center;
+    width: 130%;
+    font-size: 3rem;
+    color: rgba(230, 230, 230, 1);
+    padding-bottom: .5rem;
+    border-bottom: 2px solid white;
+}

@@ -12,7 +12,15 @@ function Hero(props) {
                 <img src={src} alt={alt} />
             </section> 
         )
-    } 
+    }
+    
+    if (imgSide === 'none') { 
+        return (
+            <section className="hero">
+                <TextElement title={title} text={text} />
+            </section> 
+        )
+    }
 
     return ( 
         <section className="hero">

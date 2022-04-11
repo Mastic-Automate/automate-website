@@ -4,8 +4,7 @@ import './EnterpriseHeader.css'
 export default function EnterpriseHeader() {
     return (
         <header className="enterprise">
-            <div className="logo">
-            </div>
+            <img src="./img/enterprise-logo.png" alt="Logo da Mastic" className="logo" />
             <nav>
                 <ul>
                     <li>

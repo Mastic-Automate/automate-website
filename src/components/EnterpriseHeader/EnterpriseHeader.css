@@ -16,9 +16,8 @@ header.enterprise {
 }
 
 header.enterprise .logo {
-    background-color: white;
-    height: 5rem;
-    width: 5rem;
+    height: 7rem;
+    width: 7rem;
     border-radius: 10px;
 }
 
@@ -30,13 +29,19 @@ header.enterprise a {
 }
 
 header.enterprise nav {
-    min-width: 365px;
-    max-width: 70%;
+    min-width: 33vw;
+    max-width: 50%;
 }
 
 header.enterprise ul {
     display: flex;
     width: 100%;
-    max-width: 365px;
+    max-width: 700px;
     justify-content: space-around;
+}
+
+header.enterprise ul li a{
+    font-family: Poppins;
+    font-size: 1.9rem;
+    text-transform: uppercase;
 }
