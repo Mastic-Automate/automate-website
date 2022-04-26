@@ -19,6 +19,8 @@ export default function StickyHeader({logo, links, backgroundcolor}) {
     window.addEventListener('scroll', toggleStickyHeader)
 
     return (
-        <Header id={classname} logo={logo} links={links} backgroundcolor={backgroundcolor} navColor={'black'} /> 
+        <div style={{minHeight: '10rem'}}>
+            <Header id={classname} logo={logo} links={links} /> 
+        </div>
     )
 }

@@ -2,13 +2,13 @@ import React from "react";
 import RenderLinks from "./RenderLinks";
 import './Header.css'
 
-export default function Header({logo, links, id, backgroundcolor, navColor}) {
+export default function Header({logo, links, id}) {
     return (
-        <header className="header" id={id} style={{backgroundColor: backgroundcolor}}>
+        <header className="header" id={id}>
             <div className="logo">
                 {logo}
             </div>
-            <nav style={{color: navColor}}>
+            <nav>
                 <RenderLinks links={links}  />
             </nav>
         </header>

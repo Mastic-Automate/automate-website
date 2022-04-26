@@ -1,32 +1,29 @@
-#landing-page .header#unactivated {
-    animation: scrollUpHeader .8s normal forwards !important;
+#landing-page .header {
+    background-color: #1EEC58;
+    color: white;
 }
 
-#landing-page .header#unactivated nav ul li a {
-    color: black;
+#landing-page .header nav ul li a {
+    color: white;
+}
+
+#landing-page .header#unactivated {
+    animation: scrollUpHeader .8s normal forwards;
 }
 
 #landing-page .header#actived {
-    animation: scrollDownHeader .8s reverse forwards !important;
-}
-
-#landing-page .header#actived nav ul li a {
-    color: white;
+    animation: scrollDownHeader .8s normal forwards;
 }
 
 @keyframes scrollUpHeader {
     0% {
         position: fixed;
-        background-color: #1EEC58;
-        color: white;
         top: 0px;
     }
     
-    75% {  
+    90% {
         position: fixed;
-        top: -10rem;
-        background-color: white;
-        color: black;
+        top: -12rem;
     }
 
     100% {
@@ -35,21 +32,17 @@
 }
 
 @keyframes scrollDownHeader {
-    0% {
-        position: fixed;
-        background-color: #1EEC58;
-        color: white;
-        top: 0px;
+    0% {  
+        position: sticky;
     }
-    
-    75% {  
+
+    10% {
         position: fixed;
-        top: -10rem;
-        background-color: white;
-        color: black;
+        top: -12rem;
     }
 
     100% {
-        position: sticky;
+        position: fixed;
+        top: 0;
     }
 }
