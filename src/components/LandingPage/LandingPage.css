@@ -1,0 +1,55 @@
+#landing-page .header#unactivated {
+    animation: scrollUpHeader .8s normal forwards !important;
+}
+
+#landing-page .header#unactivated nav ul li a {
+    color: black;
+}
+
+#landing-page .header#actived {
+    animation: scrollDownHeader .8s reverse forwards !important;
+}
+
+#landing-page .header#actived nav ul li a {
+    color: white;
+}
+
+@keyframes scrollUpHeader {
+    0% {
+        position: fixed;
+        background-color: #1EEC58;
+        color: white;
+        top: 0px;
+    }
+    
+    75% {  
+        position: fixed;
+        top: -10rem;
+        background-color: white;
+        color: black;
+    }
+
+    100% {
+        position: sticky;
+    }
+}
+
+@keyframes scrollDownHeader {
+    0% {
+        position: fixed;
+        background-color: #1EEC58;
+        color: white;
+        top: 0px;
+    }
+    
+    75% {  
+        position: fixed;
+        top: -10rem;
+        background-color: white;
+        color: black;
+    }
+
+    100% {
+        position: sticky;
+    }
+}

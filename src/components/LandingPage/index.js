@@ -1,13 +1,14 @@
+import './LandingPage.css'
 import React from "react";
 import AutomateFooter from "../AutomateFooter";
-import AutomateHeader from "../AutomateHeader";
 import Hero from "../Hero";
 import RegularSection from "../RegularSection";
+import StickyHeader from "../StickyHeader";
 
 function LandingPage() {
     return (
-        <div style={{paddingTop: '10rem'}}>
-            <AutomateHeader />
+        <div id="landing-page">
+            <StickyHeader logo={<img src="./img/tomate-icon.png" alt="Logo da empresa" style={{width: '10%', height: '10%'}}/>} links={[{link: '/', linkName:'Nosso Produto'}, {link: '/mastic', linkName:'Sobre nós'}]} backgroundcolor=''/>
 
             <Hero imgSide="right" src="/img/woman-planting.svg" alt="Mulher plantando" title="Automate" text={<p>Cultivando possibilidades</p>} />
 
@@ -15,7 +16,6 @@ function LandingPage() {
 
             <RegularSection imgSide="left" src="/img/monitoring-screen.png" alt="imagem do celular na tela de monitoramento" title="Cuidados especiais" text={<p>Monitore sua planta constantemente</p>} />
 
-                    
             <AutomateFooter />
         </div>
     )
