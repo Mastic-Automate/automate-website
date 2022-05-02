@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../Header'
 
-export default function StickyHeader({logo, links}) {
-    const [classname, setClassname] = useState('unactivated')
+export default function StickyHeader({logo, links, resizeWidth}) {
+    const [id, setId] = useState('unactivated')
 
     const toggleStickyHeader = () => {
         if (window.scrollY < (window.innerHeight - (window.innerHeight * 0.1)) ) {
-            setClassname('unactivated')
+            setId('unactivated')
         } else {
-            setClassname('actived')
+            setId('actived')
         }
     }
 
@@ -20,7 +20,7 @@ export default function StickyHeader({logo, links}) {
 
     return (
         <div style={{minHeight: '10rem'}}>
-            <Header id={classname} logo={logo} links={links} /> 
+            <Header id={id} logo={logo} links={links} resizeWidth={resizeWidth}/> 
         </div>
     )
 }

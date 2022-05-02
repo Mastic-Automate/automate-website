@@ -8,7 +8,7 @@ import StickyHeader from "../StickyHeader";
 function LandingPage() {
     return (
         <div id="landing-page">
-            <StickyHeader logo={<img src="./img/tomate-icon.png" alt="Logo da empresa" style={{width: '10%', height: '10%'}}/>} links={[{link: '/', linkName:'Nosso Produto'}, {link: '/mastic', linkName:'Sobre nós'}]} />
+            <StickyHeader logo={<img src="./img/tomate-icon.png" alt="Logo da empresa" />} links={[{link: '/', linkName:'Nosso Produto'}, {link: '/mastic', linkName:'Sobre nós'}]} resizeWidth={500} />
 
             <Hero imgSide="right" src="/img/woman-planting.svg" alt="Mulher plantando" title="Automate" text={<p>Cultivando possibilidades</p>} />
 

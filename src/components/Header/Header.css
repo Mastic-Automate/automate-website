@@ -16,9 +16,13 @@
 }
 
 .header .logo {
-    min-height: 5rem;
-    min-width: 5rem;
+    min-width: 30px;
+    max-width: 4%;
     border-radius: 10px;
+}
+
+.header .logo img {
+    width: 100%;
 }
 
 .header a {
