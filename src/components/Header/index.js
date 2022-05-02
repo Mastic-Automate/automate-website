@@ -9,7 +9,7 @@ export default function Header({logo, links, id}) {
                 {logo}
             </div>
             <nav>
-                <RenderLinks links={links}  />
+                <RenderLinks links={links} />
             </nav>
         </header>
     );
