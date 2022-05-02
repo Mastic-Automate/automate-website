@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../Header'
 
-export default function StickyHeader({logo, links, backgroundcolor}) {
+export default function StickyHeader({logo, links}) {
     const [classname, setClassname] = useState('unactivated')
 
     const toggleStickyHeader = () => {
