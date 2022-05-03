@@ -1,35 +1,27 @@
-import React, { useEffect, useState } from "react";
-import RenderLinks from "./RenderLinks";
+import { useState } from 'react';
 import './Header.css'
+import RenderLinks from './RenderLinks';
 
-export default function Header({logo, links, id, resizeWidth}) {
-    const [classname, setClassname] = useState('mobile')
-    const [click, setClick] = useState(false)
-
-    const handleClick = setClick(!click)
-
-    const toggleNavbar = () => {
-        console.log(resizeWidth >= window.innerWidth)
-        if (resizeWidth >= window.innerWidth) {
-            setClassname('mobile')
-        } else {
-            setClassname('desktop')
-        }
-    }
-
-    useEffect(() => {
-        toggleNavbar()
-    })
-
-    window.addEventListener('resize', toggleNavbar)
-
+export default function Header({logo, links, id}) {
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click)
+    const closeMenu = () => setClick(false)
+    
     return (
-        <header className={`header ${classname}`} id={id} >
+        <header className='header' id={id} >
             <div className="logo">
                 {logo}
             </div>
-            <nav>
-                <RenderLinks links={links} />
+            <nav className="navbar-items">
+                <div className={click ? `menu-icon on` : `menu-icon`} onClick={handleClick}>
+                    <div className="one"></div>
+                    <div className="two"></div>
+                    <div className="three"></div>
+                </div>
+                <div className={click ? 'nav-menu active' : 'nav-menu'}>
+                    <RenderLinks links={links} click={closeMenu} />
+                </div>
+                
             </nav>
         </header>
     );
