@@ -1,6 +1,14 @@
+#landing-page .header nav {
+    min-width: 20%;
+}
+
 #landing-page .header {
     background-color: #1EEC58;
     color: white;
+}
+
+#landing-page .header .logo {
+    font-family: Nasalization;
 }
 
 #landing-page .header nav ul li a {

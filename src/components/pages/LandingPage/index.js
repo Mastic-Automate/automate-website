@@ -1,14 +1,14 @@
 import './LandingPage.css'
 import React from "react";
-import AutomateFooter from "../AutomateFooter";
-import Hero from "../Hero";
-import RegularSection from "../RegularSection";
-import StickyHeader from "../StickyHeader";
+import AutomateFooter from "../../AutomateFooter";
+import Hero from "../../Hero";
+import RegularSection from "../../RegularSection";
+import StickyHeader from "../../StickyHeader";
 
 function LandingPage() {
     return (
         <div id="landing-page">
-            <StickyHeader logo={<img src="./img/tomate-icon.png" alt="Logo da empresa" />} links={[{link: '/', linkName:'Nosso Produto'}, {link: '/mastic', linkName:'Sobre nós'}]} resizeWidth={500} />
+            <StickyHeader logo={<img src="./img/tomate-icon.png" alt="Logo da empresa" />} links={[{link: '/', linkName:'Nosso Produto'}, {link: '/mastic', linkName:'Sobre nós'}]} />
 
             <Hero imgSide="right" src="/img/woman-planting.svg" alt="Mulher plantando" title="Automate" text={<p>Cultivando possibilidades</p>} />
 

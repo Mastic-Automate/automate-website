@@ -1,7 +1,7 @@
 import './App.css'
 import React from "react";
-import LandingPage from './components/LandingPage';
-import EnterprisePage from './components/EnterprisePage';
+import LandingPage from './components/pages/LandingPage';
+import EnterprisePage from './components/pages/EnterprisePage';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 

@@ -1,0 +1,200 @@
+#enterprise-container .header nav {
+    width: 25%;    
+    min-width: 420px;
+}
+
+#enterprise-container .header .logo {
+    font-family: Nasalization;
+    font-weight: 400;
+    color: white;
+}
+
+#enterprise-container .header nav ul li a {
+    color: white;
+    font-weight: 400;
+    font-family: Oswald;
+    letter-spacing: 2px;
+}
+
+#enterprise-container .header#unactivated {
+    animation: scrollUpHeader .8s normal forwards;
+}
+
+#enterprise-container .header#actived {
+    animation: scrollDownHeader .8s normal forwards;
+}
+
+#enterprise-container .hero {
+    margin-top: -10rem;
+    
+    background-image: url('../../../../public/img/mastic-background.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-clip: border-box;
+    background-size: 100%;
+}
+
+#enterprise-container .hero .hero-text {
+    margin-top: 9rem;
+    font-family: Nasalization;
+    color: white;
+    min-width: 300px;
+    width: 60vw;
+    min-height: 580px;
+    height: 80vh;
+    font-size: calc((100%  * 100) / 6);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#enterprise-container .hero .hero-text .letter {
+    font-weight: 500;
+    position: absolute;
+    width: calc(100% / 6);
+}
+
+#enterprise-container .hero .hero-text img {
+    min-height: 320px;
+    height: 90%;
+    width: 100%;
+    max-width: 720px;
+
+    min-width: 320px;
+    position: absolute;
+}
+
+#enterprise-container .hero .hero-text .letter.m {
+    z-index: 1;
+    left: 0;
+}
+
+#enterprise-container .hero .hero-text img {
+    top: 0;
+    z-index: 2;
+    left: calc(100% - (720px * 1.3));
+}
+
+#enterprise-container .hero .hero-text .letter.a {
+    z-index: 3;
+    left: calc((((1%  * 1000) / 6) / 6) * 1);
+}
+
+#enterprise-container .hero .hero-text .letter.s {
+    z-index: 1;
+    left: calc((((1%  * 1000) / 6) / 7) * 2);
+}
+
+#enterprise-container .hero .hero-text .letter.t {
+    z-index: 3;
+    right: calc((((1%  * 1000) / 6) / 8.5));
+}
+
+#enterprise-container .hero .hero-text .letter.i {
+    z-index: 1;
+    right: calc((((1%  * 1000) / 6) / 26));
+}
+
+#enterprise-container .hero .hero-text .letter.c {
+    z-index: 1;
+    right: 0;
+}
+
+/**#enterprise-container .hero .hero-text {
+
+}*/
+
+@media (min-height: 1020px) {
+    #enterprise-container .hero .hero-text img {
+        top: 10%;
+    }
+}
+
+@media (min-height: 1300px) {
+    #enterprise-container .hero .hero-text img {
+        top: 15%;
+    }
+}
+
+@media (max-width: 1830px) {
+    #enterprise-container .hero .hero-text {
+        font-size: calc((100%  * 100) / 8);
+    }
+
+    #enterprise-container .hero .hero-text img {
+        left: 13%;
+    }
+}
+
+@media (max-width: 1430px) {
+    #enterprise-container .hero .hero-text {
+        font-size: calc((100%  * 10));
+    }
+
+    #enterprise-container .hero .hero-text img {
+        left: 5%;
+    }
+}
+
+@media (max-width: 1130px) {
+    #enterprise-container .hero .hero-text {
+        font-size: calc((100%  * 100) / 14);
+    }
+}
+
+@media (max-width: 870px) {
+    #enterprise-container .hero .hero-text {
+        font-size: calc((100%  * 100) / 20);
+    }
+}
+
+@media (max-width: 580px) {
+    #enterprise-container .hero .hero-text {
+        font-size: calc((100%  * 100) / 30);
+    }
+}
+
+@media (max-width: 450px) {
+    #enterprise-container .hero {
+        margin-top: -70px;
+    }
+
+    #enterprise-container .hero .hero-text .letter.i {
+        z-index: 1;
+        right: calc((((1%  * 1000) / 6) / 17));
+    }
+}
+
+@keyframes scrollUpHeader {
+    0% {
+        position: fixed;
+        top: 0px;
+    }
+    
+    90% {
+        position: fixed;
+        top: -15rem;
+    }
+
+    100% {
+        position: sticky;
+    }
+}
+
+@keyframes scrollDownHeader {
+    0% {  
+        position: sticky;
+    }
+
+    10% {
+        position: fixed;
+        top: -15rem;
+    }
+
+    100% {
+        position: fixed;
+        top: 0;
+    }
+}

@@ -33,14 +33,12 @@
 }
 
 .header nav {
-    min-width: 365px;
-    max-width: 40%;
+    max-width: 50%;
 }
 
 .header ul {
     display: flex;
     width: 100%;
-    max-width: 365px;
     justify-content: space-around;
 }
 
