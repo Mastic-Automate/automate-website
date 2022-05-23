@@ -57,12 +57,10 @@
 }
 
 #enterprise-container .hero .hero-text img {
-    min-height: 320px;
     height: 90%;
+    min-height: 320px;
     width: 100%;
     max-width: 720px;
-
-    min-width: 320px;
     position: absolute;
 }
 
@@ -144,33 +142,85 @@
     #enterprise-container .hero .hero-text img {
         max-height: 70%;
         width: 100%;
-        max-width: 85%;
+        max-width: 75%;
+        left: 10%;
     }
 }
 
 @media (max-width: 870px) {
+    #enterprise-container .hero {
+        min-height: 500px;
+    }
+    
     #enterprise-container .hero .hero-text {
         font-size: calc((100%  * 100) / 20);
     }
 
     #enterprise-container .hero .hero-text {
-        min-height: 358px;
+        min-height: 360px;
     }
     
     #enterprise-container .hero .hero-text img {
         max-height: 70%;
+        height: 250px;
         width: 100%;
-        max-width: 85%;
+        max-width: 74%;
+    }
+}
+
+@media (max-width: 775px) {
+    #enterprise-container .hero {
+        min-height: 400px;
+    }
+
+    #enterprise-container .hero .hero-text {
+        min-height: 360px;
+    }
+
+    #enterprise-container .hero .hero-text img {
+        max-height: 70%;
+        top: 8%;
+        min-height: 120px;
+        height: 100%;
+        max-width: 78%;
     }
 }
 
 @media (max-width: 580px) {
+    #enterprise-container .hero {
+        min-height: 290px;
+    }
+
     #enterprise-container .hero .hero-text {
         font-size: calc((100%  * 100) / 30);
+    }
+
+    #enterprise-container .hero .hero-text {
+        margin-top: 2rem;
+        min-height: 230px;
+    }
+
+    #enterprise-container .hero .hero-text img {
+        left: 12%;
+        max-height: 75%;
+        top: 8%;
+        min-height: 120px;
+        height: 100%;
+        max-width: 68%;
     }
 }
 
 @media (max-width: 450px) {
+
+    #enterprise-container .hero {
+        min-height: 270px;
+    }
+
+    #enterprise-container .hero .hero-text {
+        min-height: 190px;
+        margin-top: 0px;
+    }
+
     #enterprise-container .hero {
         margin-top: -70px;
     }
@@ -178,6 +228,21 @@
     #enterprise-container .hero .hero-text .letter.i {
         z-index: 1;
         right: calc((((1%  * 1000) / 6) / 17));
+    }
+
+    
+    #enterprise-container .hero .hero-text {
+        margin-top: 2rem;
+        min-height: 200px;
+    }
+
+    #enterprise-container .hero .hero-text img {
+        left: 20%;
+        max-height: 65%;
+        top: 8%;
+        min-height: 120px;
+        height: 100%;
+        max-width: 58%;
     }
 }
 
