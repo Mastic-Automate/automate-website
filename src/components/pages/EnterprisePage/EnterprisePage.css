@@ -26,7 +26,8 @@
 
 #enterprise-container .hero {
     margin-top: -10rem;
-    
+    min-height: 580px;
+    max-height: 974px;
     background-image: url('../../../../public/img/mastic-background.png');
     background-repeat: no-repeat;
     background-position: top center;
@@ -36,12 +37,11 @@
 
 #enterprise-container .hero .hero-text {
     margin-top: 9rem;
+    min-height: 580px;
     font-family: Nasalization;
     color: white;
     min-width: 300px;
     width: 60vw;
-    min-height: 580px;
-    height: 80vh;
     font-size: calc((100%  * 100) / 6);
     font-weight: 600;
     display: flex;
@@ -106,12 +106,6 @@
 
 }*/
 
-@media (min-height: 1020px) {
-    #enterprise-container .hero .hero-text img {
-        top: 10%;
-    }
-}
-
 @media (min-height: 1300px) {
     #enterprise-container .hero .hero-text img {
         top: 15%;
@@ -147,6 +141,16 @@
 @media (max-width: 870px) {
     #enterprise-container .hero .hero-text {
         font-size: calc((100%  * 100) / 20);
+    }
+
+    #enterprise-container .hero .hero-text {
+        min-height: 358px;
+    }
+    
+    #enterprise-container .hero .hero-text img {
+        max-height: 70%;
+        width: 100%;
+        max-width: 85%;
     }
 }
 
