@@ -136,6 +136,16 @@
     #enterprise-container .hero .hero-text {
         font-size: calc((100%  * 100) / 14);
     }
+
+    #enterprise-container .hero .hero-text {
+        min-height: 358px;
+    }
+    
+    #enterprise-container .hero .hero-text img {
+        max-height: 70%;
+        width: 100%;
+        max-width: 85%;
+    }
 }
 
 @media (max-width: 870px) {
