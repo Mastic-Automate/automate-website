@@ -1,28 +1,37 @@
-import React from "react";
+import React from 'react';
+import './ProblematicSection.css';
+import enterpriseLogo from '../../img/enterprise-logo.png';
 
-function problematicSection() {
-    <section className='problematic-wrapper'>
-        <div className='container'>
+function ProblematicSection() {
+    return (
+        <section className='problematic-wrapper'>
             <div className='card'>
-                <div className='card-header'>
-                    <image></image>
-                    <div className='card-title'>Nossas prioridades</div>
-                </div>
-                <div className='card-text'>
+                <div className='card-container'>
+                    <div className='card-header'>
+                        <img src={ enterpriseLogo } class="logo-mastic"></img>
+                        <div className=''>Nossas prioridades</div>
+                    </div>
+                    <div className='card-text'>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </div>
+                    <button className='card-button'>Saiba mais</button>
                 </div>
-                <button className='card-button'></button>
             </div>
-            <div className='card'>
-                <image></image>
-                <div className='card-title'>Meio ambiente</div>
+
+            <div className='card' id='meioAmbiente'>
+                <div className='card-title bg-gray'>
+                    <h2 className='title'>Meio Ambiente</h2>
+                </div>
             </div>
-            <div className='card'>
-                <image></image>
-                <div className='card-title'>Periferias</div>
+            
+            <div className='card' id='periferias'>
+                <div className='card-title bg-green'>
+                <h2 className='title'>Periferias</h2>
+                </div>
             </div>
-        </div>
     </section>
+    )
+    
 }
 
-export default problematicSection;
+export default ProblematicSection;
