@@ -9,7 +9,7 @@ function ProblematicSection() {
                 <div className='card-container'>
                     <div className='card-header'>
                         <img src={ enterpriseLogo } class="logo-mastic"></img>
-                        <div className=''>Nossas prioridades</div>
+                        <div className='header-title'>Nossas prioridades</div>
                     </div>
                     <div className='card-text'>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
@@ -19,14 +19,21 @@ function ProblematicSection() {
             </div>
 
             <div className='card' id='meioAmbiente'>
-                <div className='card-title bg-gray'>
-                    <h2 className='title'>Meio Ambiente</h2>
-                </div>
+                <div className='title-wrapper'>
+                    <div className='card-title bg-gray'>
+                    
+                        <h2 className='title'>Meio Ambiente</h2>
+                        <span className='card-data'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
+                    </div>
+                </div>  
             </div>
             
             <div className='card' id='periferias'>
-                <div className='card-title bg-green'>
-                <h2 className='title'>Periferias</h2>
+                <div className='title-wrapper'>
+                    <div className='card-title bg-green'>
+                        <h2 className='title'>Periferias</h2>
+                        <span className='card-data'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
+                    </div>
                 </div>
             </div>
     </section>
