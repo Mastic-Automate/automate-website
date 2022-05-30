@@ -1,12 +1,12 @@
 .projects-wrapper {
     margin: auto;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 100%;
     max-width: 1300px;
     height: 630px;
     background-color: #407A26;
@@ -58,13 +58,52 @@
 
 .carousel-wrapper {
     width: 100%;
-    height: 450px;
+    height: 400px;
     position: absolute;
-    bottom: calc(0 + 100px);
-    background: gray;
-    opacity: 50%;   
+    bottom: -35%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+    .carousel-wrapper .btn-primary {
+        background: #407A26;
+        width: 315px;
+        height: 54px;
+        text-transform: uppercase;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel > .card {
+    background: #fff;
+    border-radius: 20px;
+    width: clamp(200px, 30%, 500px);
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
+
+    .carousel .card.active {
+        margin-top: -30px;
+    }
+
+    .carousel .card > .card-header {
+        width: 100%;
+        height: 100%;
+        background: #262535;
+    }
+
+    .carousel .card .card-body {
+        height: 100%;
+    }

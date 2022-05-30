@@ -11,9 +11,38 @@ function ProjectsSection() {
             <img src={ enterpriseLogo } className="logo-mastic"></img>
         </div>
         <div className='carousel-wrapper'>
-            <div className='carousel'></div>
+            <div className='carousel'>
+              <div className='card'>
+                <div className='card-header'>
 
-            <button>Ver projetos</button>
+                </div>
+                <div className='card-body'>
+
+                </div>
+
+              </div>
+              <div className='card active'>
+                <div className='card-header'>
+
+                </div>
+                <div className='card-body'>
+
+                </div>
+                
+              </div>
+              <div className='card'>
+                <div className='card-header'>
+
+                </div>
+                <div className='card-body'>
+
+                </div>
+                
+              </div>
+            </div>
+              
+
+            <button className='btn-primary'>Ver projetos</button>
         </div>
         
         
