@@ -3,6 +3,7 @@ import React from "react";
 import StickyHeader from '../../StickyHeader';
 import Hero from '../../Hero';
 import Problematic from '../../Problematic';
+import ProjectsSection from '../../ProjectsSection';
 
 export default function EnterprisePage() {
     return (
@@ -23,6 +24,7 @@ export default function EnterprisePage() {
                 </div>} />
 
             <Problematic />
+            <ProjectsSection />
             
         </div>
     )
