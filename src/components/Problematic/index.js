@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProblematicSection.css';
+import './Problematic.css';
 import enterpriseLogo from '../../img/enterprise-logo.png';
 
 function Problematic() {
@@ -8,7 +8,7 @@ function Problematic() {
             <div className='card'>
                 <div className='card-container'>
                     <div className='card-header'>
-                        <img src={ enterpriseLogo } class="logo-mastic"></img>
+                        <img src={ enterpriseLogo } alt="logo-mastic" className="logo-mastic" />
                         <div className='header-title'>Nossas prioridades</div>
                     </div>
                     <div className='card-text'>
