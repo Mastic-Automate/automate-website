@@ -27,7 +27,6 @@
 #enterprise-container .hero {
     margin-top: -10rem;
     min-height: 580px;
-    max-height: 974px;
     background-image: url('../../../../public/img/mastic-background.png');
     background-repeat: no-repeat;
     background-position: top center;
@@ -131,6 +130,11 @@
 }
 
 @media (max-width: 1130px) {
+    
+    #enterprise-container .hero {
+        max-height: 974px;
+    }
+
     #enterprise-container .hero .hero-text {
         font-size: calc((100%  * 100) / 14);
     }
