@@ -2,6 +2,7 @@ import './EnterprisePage.css'
 import React from "react";
 import StickyHeader from '../../StickyHeader';
 import Hero from '../../Hero';
+import ProblematicSection from '../../ProblematicSection';
 
 export default function EnterprisePage() {
     return (
@@ -20,6 +21,8 @@ export default function EnterprisePage() {
                     <div className='letter i'>I</div>
                     <div className='letter c'>C</div>
                 </div>} />
+
+            <ProblematicSection />
             
         </div>
     )
