@@ -1,6 +1,6 @@
 import React from 'react';
 import './Problematic.css';
-import enterpriseLogo from '../../img/enterprise-logo.png';
+import enterpriseLogo from '../../img/logo-mastic-removedBG.png';
 
 function Problematic() {
     return (

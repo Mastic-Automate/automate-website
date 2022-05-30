@@ -4,6 +4,7 @@ import StickyHeader from '../../StickyHeader';
 import Hero from '../../Hero';
 import Problematic from '../../Problematic';
 import EnterpriseFooter from '../../EnterpriseFooter';
+import ProjectsSection from '../../ProjectsSection';
 
 export default function EnterprisePage() {
     return (
@@ -24,6 +25,7 @@ export default function EnterprisePage() {
                 </div>} />
 
             <Problematic />
+            <ProjectsSection />
             
             <EnterpriseFooter />
 
