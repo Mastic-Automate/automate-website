@@ -2,7 +2,7 @@ import './EnterprisePage.css'
 import React from "react";
 import StickyHeader from '../../StickyHeader';
 import Hero from '../../Hero';
-import ProblematicSection from '../../ProblematicSection';
+import Problematic from '../../Problematic';
 
 export default function EnterprisePage() {
     return (
@@ -22,7 +22,7 @@ export default function EnterprisePage() {
                     <div className='letter c'>C</div>
                 </div>} />
 
-            <ProblematicSection />
+            <Problematic />
             
         </div>
     )

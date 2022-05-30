@@ -2,7 +2,7 @@ import React from 'react';
 import './ProblematicSection.css';
 import enterpriseLogo from '../../img/enterprise-logo.png';
 
-function ProblematicSection() {
+function Problematic() {
     return (
         <section className='problematic-wrapper'>
             <div className='card'>
@@ -41,4 +41,4 @@ function ProblematicSection() {
     
 }
 
-export default ProblematicSection;
+export default Problematic;
