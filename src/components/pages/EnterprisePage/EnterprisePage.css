@@ -169,6 +169,9 @@
 }
 
 @media (max-width: 775px) {
+    #enterprise-container .header .logo {
+        font-size: 1.8rem;
+    }
     #enterprise-container .hero {
         min-height: 400px;
     }
