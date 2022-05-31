@@ -8,7 +8,7 @@ function ProjectsSection() {
     <div className='projects-wrapper'>
         <div className='card-projects'>
             <h1 className='card-projects-title'>Projetos</h1>
-            <img src={ enterpriseLogo } className="logo-mastic"></img>
+            <img src={ enterpriseLogo } alt="logo-mastic" className="logo-mastic"></img>
         </div>
         <div className='carousel-wrapper'>
             <div className='carousel'>
