@@ -21,7 +21,12 @@ font & reset css
 
 @font-face {
   font-family: 'Oswald';
-  src: url('../public/fonts/Oswald.ttf') format('truetype');
+  src: url('../public/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Oswald-Light';
+  src: url('../public/fonts/Oswald-Light.ttf') format('truetype');
 }
 
 @font-face {
