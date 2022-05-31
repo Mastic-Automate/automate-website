@@ -5,6 +5,7 @@ import Hero from '../../Hero';
 import Problematic from '../../Problematic';
 import EnterpriseFooter from '../../EnterpriseFooter';
 import ProjectsSection from '../../ProjectsSection';
+import AboutUs from '../../AboutUsSection';
 
 export default function EnterprisePage() {
     return (
@@ -26,7 +27,7 @@ export default function EnterprisePage() {
 
             <Problematic />
             <ProjectsSection />
-            
+            <AboutUs />
             <EnterpriseFooter />
 
         </div>
