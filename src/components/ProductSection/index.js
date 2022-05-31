@@ -19,7 +19,7 @@ function ProductSection({links, closeMenu}) {
                     <RenderLinks links={links} click={closeMenu}/>
                 </div>
               </div>
-              <div className='col'>
+              <div className='col col-img'>
                   <img src={holographicTomato}></img>
               </div>
           </div>

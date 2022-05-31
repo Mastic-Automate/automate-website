@@ -129,7 +129,8 @@
 @media only screen and (max-width: 768px) {
     .problematic-wrapper {
         flex-direction: column;
-        width: 440px;
+        width: 44
+        0px;
         height: calc(350px * 3);
     }
 }
