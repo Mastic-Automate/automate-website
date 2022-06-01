@@ -7,23 +7,38 @@ function CheckoutPage_address() {
             <div className='col'>
                 <div className='form-wrapper'>
                     <form>
-                        <div class="form-group">
+                        <h1 className='primary-title'>Checkout</h1>
+                        <div className="form-group">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                         </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        <div className="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <div className='form-group row'>
+                                <input type="number" min={1} max={12} maxLength={2} className="form-control" id="mes" placeholder="Mês" />
+                                <input type="number" min={1} max={31} maxLength={2} className="form-control" id="dia" placeholder="Dia" />
+                                <input type="number" min={1} max={999} maxLength={3} className="form-control" id="cvv" placeholder="CVV" />
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <div className="form-group">
+                            <label for="exampleInputEmail1">Nome Cartão de Crédito</label>
+                            <input type="text" className="form-control" id="nameCreditCard" placeholder="Enter name" />
+                        </div>
+                        <div className="form-group">
+                            <div className='form-check'>
+                                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                                <label className="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" className="btn btn-primary">Submit</button>
+                        </div>    
                     </form>
                 </div>
             </div>
-            <div className='col'>
+            <div className='col bg-primary'>
 
             </div>
         </section>
