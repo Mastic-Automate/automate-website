@@ -1,5 +1,6 @@
 import React from 'react';
 import './CheckoutPage_address.css';
+import holographicTomato from '../../../img/tomateHolografico.png';
 
 function CheckoutPage_address() {
     return (
@@ -31,15 +32,15 @@ function CheckoutPage_address() {
                         <div className="form-group">
                             <div className='form-check'>
                                 <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                                <label className="form-check-label" for="exampleCheck1">Check me out</label>
+                                <label className="form-check-label" for="exampleCheck1">Eu concordo com os <span className='form-check-label link'>Termos e Condições</span></label>
                             </div>
-                            <button type="submit" className="btn btn-primary">Submit</button>
+                            <button type="submit" className="btn btn-primary">Encomendar</button>
                         </div>    
                     </form>
                 </div>
             </div>
             <div className='col bg-primary'>
-
+                <img src={holographicTomato}></img>
             </div>
         </section>
     )

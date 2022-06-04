@@ -10,6 +10,8 @@
         height: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
+        position: relative;
     }
 
     .checkout-wrapper .col.bg-primary{
@@ -82,6 +84,14 @@ form .form-group {
 
         border: 1px solid #F0F0F0;
         border-radius: 10px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+
+        color: #9D9D9D;
     }
 
     form .form-group.row {
@@ -89,3 +99,70 @@ form .form-group {
         justify-content: space-between;
         gap: 5px;
     }
+    
+    form .form-group .btn {
+        margin-top: 10px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 22px 10px 25px;
+        gap: 10px;
+
+        background: #1EEC58;
+        border: none;
+        border-radius: 10px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+
+        color: #FFFFFF;
+    }
+
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+    .form-check .form-check-label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #000000;
+}
+
+    .form-check .form-check-input {
+        box-sizing: border-box;
+
+        width: 29px;
+        height: 20px;
+        margin-right: 10px;
+
+        border: 1px solid #8E8E8E;
+        border-radius: 5px;
+    }
+
+    .form-check .form-check-label.link {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+
+        color: #1EEC58;
+        border-bottom: 1px solid #1EEC58;
+    }
+
+
+/* IMAGE  ========================== */
+
+.col img {
+    position: absolute;
+    height: 100%;
+}
