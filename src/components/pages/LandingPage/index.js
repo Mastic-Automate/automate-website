@@ -17,7 +17,7 @@ function LandingPage() {
 
             <RegularSection imgSide="left" src="/img/monitoring-screen.png" alt="imagem do celular na tela de monitoramento" title="Cuidados especiais" text={<p>Monitore sua planta constantemente</p>} />
 
-            <ProductSection links={[{link: '/checkoutPage_address', linkName:'COMPRE AQUI'}]}/>
+            <ProductSection links={[{link: '/checkoutPage_payment', linkName:'COMPRE AQUI'}]}/>
 
             <AutomateFooter />
         </div>

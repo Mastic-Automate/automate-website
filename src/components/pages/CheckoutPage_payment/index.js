@@ -1,8 +1,9 @@
 import React from 'react';
+import RenderLinks from '../../Header/RenderLinks';
 import './CheckoutPage_payment.css';
 import holographicTomato from '../../../img/tomateHolografico.png';
 
-function CheckoutPage_address() {
+function CheckoutPage_payment() {
     return (
         <section className='checkout-wrapper'>
             <div className='col'>
@@ -18,7 +19,7 @@ function CheckoutPage_address() {
                             <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                         </div>
                         <div className="form-group">
-                            <label for="exampleInputPassword1">Password</label>
+                            <label for="exampleInputPassword1">Data Válidade</label>
                             <div className='form-group row'>
                                 <input type="number" min={1} max={12} maxLength={2} className="form-control" id="mes" placeholder="Mês" />
                                 <input type="number" min={1} max={31} maxLength={2} className="form-control" id="dia" placeholder="Dia" />
@@ -34,7 +35,9 @@ function CheckoutPage_address() {
                                 <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                                 <label className="form-check-label" for="exampleCheck1">Eu concordo com os <span className='form-check-label link'>Termos e Condições</span></label>
                             </div>
-                            <button type="submit" className="btn btn-primary">Encomendar</button>
+                            <div href="#" className='btn primary-btn'>
+                                <RenderLinks links={[{link: '/checkoutPage_address', linkName:'ENCOMENDAR'}]}/>
+                            </div>
                         </div>    
                     </form>
                 </div>
@@ -47,4 +50,4 @@ function CheckoutPage_address() {
     
 }
 
-export default CheckoutPage_address;
+export default CheckoutPage_payment;
