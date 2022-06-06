@@ -41,7 +41,7 @@ return (
         </div>
 
       </div>
-      <button className='btn-primary'>Ver projetos</button>
+      <button className='btn-primary'>Veja mais projetos</button>
     </div>
   </div>
 );
