@@ -16,27 +16,37 @@ return (
     </div>
     <div className='carousel-wrapper'>
       <div className='carousel'>
-        
+
         <div className='card'>
           <div className='card-header'>
+            <img src='./img/automate-logo-cutted.png' alt='logo do automate' />
           </div>
           <div className='card-body'>
+            <h1>Automate</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button className='btn-card'>SAIBA mais</button>
           </div>
-        </div>
-
-        <div className='card active'>
-          <div className='card-header'>
-          </div>
-
-          <div className='card-body'>
-          </div>
-
         </div>
 
         <div className='card'>
           <div className='card-header'>
+            <img src='./img/automate-logo-cutted.png' alt='logo do automate' />
           </div>
           <div className='card-body'>
+            <h1>Automate</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button className='btn-card'>SAIBA mais</button>
+          </div>
+        </div>
+
+        <div className='card'>
+          <div className='card-header'>
+            <img src='./img/automate-logo-cutted.png' alt='logo do automate' />
+          </div>
+          <div className='card-body'>
+            <h1>Automate</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button className='btn-card'>SAIBA mais</button>
           </div>
         </div>
 
