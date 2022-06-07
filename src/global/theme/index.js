@@ -12,7 +12,12 @@ export const theme = {
 
         ERROR: "#FF5959",
         WHITE: "#FFFFFF",
+    },
+
+    FONTS: {
+        NASALIZATION: 'Nasalization',
+        OSWALD: 'Oswald',
     }
 
-    
+
 }
