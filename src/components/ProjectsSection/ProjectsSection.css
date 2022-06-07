@@ -12,6 +12,10 @@
     background-repeat: no-repeat;
 }
 
+.projects-wrapper button:hover {
+    filter: brightness(90%);
+}
+
 .card-projects {
     margin: 50px 0;
     display: flex;
@@ -47,7 +51,7 @@
 .carousel-wrapper {
     width: 100%;
     min-height: 400px;
-    margin-top: 24.5rem;
+    margin-top: 26.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -66,10 +70,12 @@
         color: #fff;
         border: 1px solid #fff;
         border-radius: 10px;
+        cursor: pointer;
     }
 
 .carousel {
     width: 99%;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 6rem;
@@ -79,49 +85,97 @@
 
 .carousel .card {
     padding: 0;
-    border: 2px solid black;
-    background-image: linear-gradient(180deg, rgb(156, 156, 156), white);
+    background-image: linear-gradient(180deg, rgb(221, 221, 221), rgb(248, 248, 248));
     border-radius: 20px;
     width: 100%;
     max-width: 300px;
-    height: 360px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-    .carousel .card.active {
-        background-color: white;
-        background-image: none;
-        transform: translate(0, -20px);
-        box-shadow: 1px 1px 50px 10px rgba(0, 0, 0, 0.25);
-    }
-
     .carousel .card .card-header {
-        width: 100.19%;
-        margin-top: -.07%;
-        margin-left: -.1%;
-        height: 44%;
+        width: 100%;
+        height: 43%;
         padding: 0;
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
         background-color: #262535;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel .card .card-header img {
+        height: 86%;
     }
 
     .carousel .card .card-body {
         height: 57%;
         width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 4%;
+    }
+
+    .carousel .card .card-body h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.6rem;
+        width: 100%;
+        font-family: Nasalization;
+        font-weight: 400;
+        color: #4B902D;
+    }
+
+    .carousel .card .card-body p {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: Oswald-Light;
+        font-size: 1.7rem;
+    }
+
+    .carousel .card .card-body button.btn-card {
+        width: 90%;
+        height: 35px;
+        text-transform: uppercase;
+        font-family: Oswald;
+        letter-spacing: 1px;
+        font-size: 1.7rem;
+        margin-top: .5rem;
+        border: none;
+        border-radius: 10px;
+        background-color: #4B902D;
+        color: white;
+        cursor: pointer;
+    }
+
+    .carousel .card:hover {
+        background-color: white;
+        background-image: linear-gradient(white, white);
+        transform: translate(0, -20px);
+        box-shadow: 1px 1px 50px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .carousel .card:hover .card-body {
+        transition: none;
+        border: 1px solid black;
+        border-top: 0px solid black;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
     }
 
 @media only screen and (max-width: 1070px) {
     .carousel .card {
         background-color: white;
         background-image: none;
-        box-shadow: 1px 1px 50px 10px rgba(0, 0, 0, 0.25);
-    }
-
-    .carousel .card.active {
         transform: none;
+        box-shadow: 1px 1px 50px 10px rgba(0, 0, 0, 0.25);
     }
 }
 
