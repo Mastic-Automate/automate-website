@@ -22,6 +22,8 @@
 
 #enterprise-container .header#actived {
     animation: scrollDownHeader .8s normal forwards;
+    background-color: #1f1f2d;
+    opacity: 0.95;
 }
 
 #enterprise-container .hero {
@@ -257,11 +259,13 @@
     0% {
         position: fixed;
         top: 0px;
+        z-index: 10;
     }
     
     90% {
         position: fixed;
         top: -15rem;
+        z-index: 10;
     }
 
     100% {
@@ -277,10 +281,12 @@
     10% {
         position: fixed;
         top: -15rem;
+        z-index: 10;
     }
 
     100% {
         position: fixed;
         top: 0;
+        z-index: 10;
     }
 }

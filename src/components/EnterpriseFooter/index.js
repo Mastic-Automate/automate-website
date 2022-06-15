@@ -1,4 +1,5 @@
 import React from 'react'
+import enterpriseLogo from '../../img/logo-mastic-removedBG.png';
 import './EnterpriseFooter.css'
 
 export default function EnterpriseFooter() {
@@ -6,7 +7,7 @@ export default function EnterpriseFooter() {
         <footer className='enterprise-footer'>
             <div className='our-priorities'>
                 <div className='title'>
-                    <img src='../../img/enterprise-logo.png' alt='Logo da Mastic' />
+                    <img src={ enterpriseLogo } alt='Logo da Mastic' />
                     <h2>Nossas Prioridades</h2>
                 </div>
                 

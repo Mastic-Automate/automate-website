@@ -20,7 +20,7 @@ function ProductSection({links, closeMenu}) {
                 </div>
               </div>
               <div className='col col-img'>
-                  <img src={holographicTomato}></img>
+                  <img src={holographicTomato} alt='Tomate Holográfico'/>
               </div>
           </div>
       </section>
