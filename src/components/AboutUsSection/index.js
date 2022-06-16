@@ -1,5 +1,6 @@
 import React from 'react'
 import enterpriseLogo from '../../img/logo-mastic-removedBG.png';
+import Carousel from '../Carousel';
 import './AboutUs.css'
 
 export default function AboutUs() {
@@ -11,6 +12,8 @@ export default function AboutUs() {
                     <h2>Uma empresa ecológica</h2>
                 </div>
             </div>
+
+            <Carousel />
             <div className='about-us-details'>
                 <div className='container-details'>
                     <div className='detail our-mission'>
