@@ -13,44 +13,51 @@ import yanMendonca from '../../img/yanMendonca.jpeg';
 // import { Container } from './styles';
 
 function Carousel() {
-    const slides = document.querySelectorAll('.item');
-    const slideButton = document.querySelectorAll('.slideButton');
 
-    let current = 0;
-    let prev = 7;
-    let next = 1;
+    document.addEventListener("DOMContentLoaded", function(event) {
+    
+        const slides = document.querySelectorAll('.item');
+        const slideButton = document.querySelectorAll('.slideButton');
 
-    for (let i = 0; i < slideButton.length; i++) {
-        slideButton[i].addEventListener('click', () => i === 0 ? gotoPrev() : gotoNext());
-    }
+        let current = 0;
+        let prev = 7;
+        let next = 1;
 
-    const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
-
-    const gotoNext = () => current < slides.length - 1 ? gotoNum(current + 1) : gotoNum(0);
-
-    const gotoNum = number => {
-        current = number;
-        prev = current - 1;
-        next = current + 1;
-
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].classList.remove('active');
-            slides[i].classList.remove('prev');
-            slides[i].classList.remove('next');
+        for (let i = 0; i < slideButton.length; i++) {
+            slideButton[i].addEventListener('click', () => i === 0 ? gotoPrev() : gotoNext());
         }
 
-        if (next === slides.length) {
-            next = 0;
-        }
+        const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 
-        if (prev === -1) {
-            prev = 7;
-        }
+        const gotoNext = () => current < slides.length - 1 ? gotoNum(current + 1) : gotoNum(0);
 
-        slides[current].classList.add('active');
-        slides[prev].classList.add('prev');
-        slides[next].classList.add('next');
-    }
+        const gotoNum = number => {
+            current = number;
+            prev = current - 1;
+            next = current + 1;
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+                slides[i].classList.remove('prev');
+                slides[i].classList.remove('next');
+            }
+
+            if (next === slides.length) {
+                next = 0;
+            }
+
+            if (prev === -1) {
+                prev = 7;
+            }
+
+            slides[current].classList.add('active');
+            slides[prev].classList.add('prev');
+            slides[next].classList.add('next');
+        }
+        
+    });
+
+    
 
   return (
     <section className="carousel-wrapper">
