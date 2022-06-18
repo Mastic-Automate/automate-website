@@ -6,10 +6,12 @@ import RegularSection from "../../RegularSection";
 import StickyHeader from "../../StickyHeader";
 import ProductSection from '../../ProductSection';
 
+import { LogoImg } from './styles';
+
 function LandingPage() {
     return (
         <div id="landing-page">
-            <StickyHeader logo={<img src="./img/tomate-icon.png" alt="Logo da empresa" />} links={[{link: '/', linkName:'Nosso Produto'}, {link: '/mastic', linkName:'Sobre nós'}]} />
+            <StickyHeader logo={<LogoImg src="./img/tomate-icon.png" alt="Logo da empresa" />} links={[{link: '/', linkName:'Nosso Produto'}, {link: '/mastic', linkName:'Sobre nós'}]} />
 
             <Hero imgSide="right" src="/img/woman-planting.svg" alt="Mulher plantando" title="Automate" text={<p>Cultivando possibilidades</p>} />
 
