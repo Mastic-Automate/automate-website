@@ -6,10 +6,12 @@ import Problematic from '../../Problematic';
 import EnterpriseFooter from '../../EnterpriseFooter';
 import ProjectsSection from '../../ProjectsSection';
 import AboutUs from '../../AboutUsSection';
+import Preloader from '../../Preloader';
 
 export default function EnterprisePage() {
     return (
         <div id="enterprise-container">
+            <Preloader />
             <StickyHeader logo={<h1>MASTIC</h1>} links={[{link: '/mastic', linkName:'HOME'}, {link: '/', linkName:'PRODUTOS'}, {link: '#about-us', linkName:'SOBRE NÓS'}]} />
 
             <Hero title={

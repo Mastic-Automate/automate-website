@@ -13,59 +13,57 @@ export const theme = {
         ERROR: "#FF5959",
         WHITE: "#FFFFFF",
     },
-
-    /**
     FONTS: {
         NASALIZATION: {
-            uri: require('../fonts/nasalization-rg.otf')
+            uri: require('./fonts/nasalization-rg.otf')
         },
 
         POPPINS_EXTRALIGHT: {
-            uri: require('../fonts/Poppins-ExtraLight.ttf')
+            uri: require('./fonts/Poppins-ExtraLight.ttf')
         },
 
         POPPINS_LIGHT: {
-            uri: require('../fonts/Poppins-Light.ttf')
+            uri: require('./fonts/Poppins-Light.ttf')
         },
 
         POPPINS: {
-            uri: require('../fonts/Poppins-Regular.ttf')
+            uri: require('./fonts/Poppins-Regular.ttf')
         },
 
         POPPINS_SEMIBOLD: {
-            uri: require('../fonts/Poppins-SemiBold.ttf')
+            uri: require('./fonts/Poppins-SemiBold.ttf')
         },
 
         POPPINS_BOLD: {
-            uri: require('../fonts/Poppins-Bold.ttf')
+            uri: require('./fonts/Poppins-Bold.ttf')
         },
 
         POPPINS_MEDIUM: {
-            uri: require('../fonts/Poppins-Medium.ttf')
+            uri: require('./fonts/Poppins-Medium.ttf')
         },
 
         OSWALD_EXTRALIGHT: {
-            uri: require('../fonts/static/Oswald-ExtraLight.ttf')
+            uri: require('./fonts/static/Oswald-ExtraLight.ttf')
         },
 
         OSWALD_LIGHT: {
-            uri: require('../fonts/static/Oswald-Light.ttf')
+            uri: require('./fonts/static/Oswald-Light.ttf')
         },
 
         OSWALD: {
-            uri: require('../fonts/static/Oswald-Regular.ttf')
+            uri: require('./fonts/static/Oswald-Regular.ttf')
         },
 
         OSWALD_SEMIBOLD: {
-            uri: require('../fonts/static/Oswald-SemiBold.ttf')
+            uri: require('./fonts/static/Oswald-SemiBold.ttf')
         },
 
         OSWALD_BOLD: {
-            uri: require('../fonts/static/Oswald-Bold.ttf')
+            uri: require('./fonts/static/Oswald-Bold.ttf')
         },
 
         OSWALD_MEDIUM: {
-            uri: require('../fonts/static/Oswald-Medium.ttf')
+            uri: require('./fonts/static/Oswald-Medium.ttf')
         },
-    } */
+    }
 }
