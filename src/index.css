@@ -16,27 +16,27 @@ font & reset css
 */
 @font-face {
   font-family: 'Poppins';
-  src: url('../public/fonts/Poppins-Regular.ttf') format('truetype');
+  src: url('../public/global/fonts/Poppins-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Oswald';
-  src: url('../public/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+  src: url('../public/global/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Oswald-Light';
-  src: url('../public/fonts/Oswald-Light.ttf') format('truetype');
+  src: url('../public/global/fonts/Oswald-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Oswald-ExtraLight';
-  src: url('../public/fonts/Oswald-ExtraLight.ttf') format('truetype');
+  src: url('../public/global/fonts/Oswald-ExtraLight.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Nasalization';
-  src: url('../public/fonts/nasalization.otf') format('opentype');
+  src: url('../public/global/fonts/nasalization.otf') format('opentype');
 }
 /*
   reset
