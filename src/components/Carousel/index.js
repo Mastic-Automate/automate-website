@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
 import { Container, Items, Item, ButtonContainer, SlideButton, Title, Texts, SubTitle, Description  } from './styles';
-
 function Carousel({data}) {
     const [current, setCurrent] = useState(1)
 
@@ -9,7 +8,7 @@ function Carousel({data}) {
         if (number > data.length) {
             number = 1
         } else if (number <= 0) {
-            number = data.length 
+            number = data.length
         }
 
         setCurrent(number)

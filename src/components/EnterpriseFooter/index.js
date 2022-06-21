@@ -1,41 +1,48 @@
 import React from 'react'
 import enterpriseLogo from '../../assets/img/logo-mastic-removedBG.png';
-import './EnterpriseFooter.css'
+import { FooterWrapper, Container, OurPriorities, ContainerPriorities, BGGreen, Title, Projects, Project, FastLinks } from './styles';
+
 
 export default function EnterpriseFooter() {
     return (
-        <footer className='enterprise-footer'>
-            <div className='our-priorities'>
-                <div className='title'>
-                    <img src={ enterpriseLogo } alt='Logo da Mastic' />
-                    <h2>Nossas Prioridades</h2>
-                </div>
-                
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            </div>
-            <div className='projects'>
-                <h2>Projetos</h2>
-                <div className='project'>
-                    <div className='img'></div>
-                    <h3>AUTOMATE</h3>
-                </div>
-                <div className='project'>
-                    <div className='img'></div>
-                    <h3>AUTOMATE</h3>
-                </div>
-                <div className='project'>
-                    <div className='img'></div>
-                    <h3>AUTOMATE</h3>
-                </div>                
-            </div>
-            <div className='fast-links'>
-                <h2>Links Rápidos</h2>
-                <ul>
-                    <li>HOME</li>
-                    <li>Produtos</li>
-                    <li>sobre nós</li>
-                </ul>
-            </div>
-        </footer>
+        <FooterWrapper className='enterprise-footer'>
+            <BGGreen></BGGreen>
+            <Container>
+                <OurPriorities className='our-priorities'>
+                    <ContainerPriorities>
+                        <Title className='title'>
+                            <img src={ enterpriseLogo } alt='Logo da Mastic' />
+                            <h2>Nossas Prioridades</h2>
+                        </Title>
+                        
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </ContainerPriorities>
+                </OurPriorities>
+                <Projects className='projects'>
+                    <h2>Projetos</h2>
+                    <Project className='project'>
+                        <div className='img'></div>
+                        <h3>AUTOMATE</h3>
+                    </Project>
+                    <Project className='project'>
+                        <div className='img'></div>
+                        <h3>AUTOMATE</h3>
+                    </Project>
+                    <Project className='project'>
+                        <div className='img'></div>
+                        <h3>AUTOMATE</h3>
+                    </Project>                
+                </Projects>
+                <FastLinks className='fast-links'>
+                    <h2>Links Rápidos</h2>
+                    <ul>
+                        <li>HOME</li>
+                        <li>Produtos</li>
+                        <li>sobre nós</li>
+                    </ul>
+                </FastLinks>
+            </Container>
+            
+        </FooterWrapper>
     )
 }
