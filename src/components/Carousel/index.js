@@ -1,5 +1,4 @@
 import React from 'react';
-import './Carousel.css';
 
 import bianca from '../../img/bianca.jpeg';
 import gabriel from '../../img/gabriel.jpeg';
@@ -10,7 +9,11 @@ import victor from '../../img/victor.jpeg';
 import yanCarlos from '../../img/yanCarlos.jpeg';
 import yanMendonca from '../../img/yanMendonca.jpeg';
 
-// import { Container } from './styles';
+import { Container,
+        Items,
+        Item,
+        ButtonContainer,
+        SlideButton} from './styles'
 
 function Carousel() {
 
@@ -22,6 +25,7 @@ function Carousel() {
         let current = 0;
         let prev = 7;
         let next = 1;
+        
 
         for (let i = 0; i < slideButton.length; i++) {
             slideButton[i].addEventListener('click', () => i === 0 ? gotoPrev() : gotoNext());
@@ -60,49 +64,49 @@ function Carousel() {
     
 
   return (
-    <section className="carousel-wrapper">
-        <div className="items">
-            <div className="item active">
+    <Container className="carousel-wrapper">
+        <Items className="items">
+            <Item className="item active">
                 <img src={ bianca } alt="logo-mastic" className="logo-mastic" />
-            </div>
+            </Item>
 
-            <div className="item next">
+            <Item className="item next">
                 <img src={ gabriel } alt="logo-mastic" className="logo-mastic" />
-            </div>
+            </Item>
 
-            <div className="item">
+            <Item className="item">
                 <img src={ gustavo } alt="logo-mastic" className="logo-mastic" />
-            </div>
+            </Item>
 
-            <div className="item">
+            <Item className="item">
                 <img src={ kevin } alt="logo-mastic" className="logo-mastic" />
-            </div>
+            </Item>
 
-            <div className="item">
+            <Item className="item">
                 <img src={ simone } alt="logo-mastic" className="logo-mastic" />
-            </div>
+            </Item>
 
-            <div className="item">
+            <Item className="item">
                 <img src={ victor } alt="logo-mastic" className="logo-mastic" />
-            </div>
+            </Item>
 
-            <div className="item">
+            <Item className="item">
                 <img src={ yanCarlos } alt="logo-mastic" className="logo-mastic" />
-            </div>
+            </Item>
 
-            <div className="item prev">
+            <Item className="item prev">
                 <img src={ yanMendonca } alt="logo-mastic" className="logo-mastic" />
-            </div>
-            <div className="button-container">
-                <div className="slideButton">
+            </Item>
+            <ButtonContainer className="button-container">
+                <SlideButton className="slideButton">
                     <i className="fas fa-angle-left"></i>
-                </div>
-                <div className="slideButton">
+                </SlideButton>
+                <SlideButton className="slideButton">
                     <i className="fas fa-angle-right"></i>
-                </div>
-            </div>
-        </div>
-    </section>
+                </SlideButton>
+            </ButtonContainer>
+        </Items>
+    </Container>
   );
 }
 
