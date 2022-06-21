@@ -92,7 +92,6 @@ const fadeOut = keyframes`
 
     } 100% {
         display: none;
-        position: static;
         height: 0;
         width: 0;                 
         opacity: 0;
