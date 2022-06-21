@@ -1,6 +1,7 @@
 import React from 'react'
-import enterpriseLogo from '../../img/logo-mastic-removedBG.png';
+import enterpriseLogo from '../../assets/img/logo-mastic-removedBG.png';
 import Carousel from '../Carousel';
+import team from '../../assets/data/team.js'
 
 import { AboutUsWrapper,
         AboutUsHeader,
@@ -19,7 +20,7 @@ export default function AboutUs() {
                         </Container>
                 </AboutUsHeader>
 
-                <Carousel />
+                <Carousel data={team} />
 
                 <AboutUsDetails className='about-us-details'>
                     <ContainerDetails className='container-details'>

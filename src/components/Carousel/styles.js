@@ -2,13 +2,42 @@ import styled from "styled-components";
 
 export const Container = styled.section`
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     display: flex;
     align-items: flex-start;
+    font-family: Oswald;
+
+`;
+
+export const Texts = styled.div`
+    font-size: 30px;
+    margin: 0 auto 70px auto;
+`
+
+export const Title = styled.h1`
+    text-align: center;
+    width: 100%;
+`;
+
+export const SubTitle = styled.h1`
+    text-align: center;
+    width: 100%;
+    transition: .8s;
+`;
+
+export const Description = styled.p`
+    padding: 0 10% 0 10%;
+    margin-top: -15px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    color: white;
 `;
 
 export const Items = styled.div`
     width: 100%;
+    min-height: 450px;
     height: 100%;
     user-select: none;
     display: flex;
@@ -95,3 +124,5 @@ export const SlideButton = styled.div`
         z-index: -99;
     }
 `;
+
+

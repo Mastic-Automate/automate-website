@@ -1,6 +1,6 @@
 import React from 'react';
 import './CheckoutPage.css';
-import holographicTomato from '../../../img/tomateHolografico.png';
+import holographicTomato from '../../../assets/img/tomateHolografico.png';
 
 function CheckoutPage_address() {
     return (

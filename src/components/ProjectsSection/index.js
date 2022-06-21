@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProjectsSection.css';
 
-import enterpriseLogo from '../../img/logo-mastic-removedBG.png';
+import enterpriseLogo from '../../assets/img/logo-mastic-removedBG.png';
 
 function ProjectsSection() {
 return (

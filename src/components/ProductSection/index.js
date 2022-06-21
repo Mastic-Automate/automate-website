@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductSection.css';
 
-import holographicTomato from '../../img/tomateHolografico.png';
+import holographicTomato from '../../assets/img/tomateHolografico.png';
 import RenderLinks from '../Header/RenderLinks';
 
 // import { Container } from './styles';
