@@ -66,8 +66,8 @@ export const HeaderWrapper = styled.header`
     }
 
     ${media.tablet} {
-        position: relative;
-
+            position: relative;
+            z-index: 997;
         & ul {
         max-width: 265px;
         }
@@ -147,11 +147,11 @@ export const NavMenu = styled.div`
         align-items: center;
         min-height: 70px;
         height: fit-content;
-        background-color: rgb(1, 209, 60);
+        background-color: ${props => props.backgroundcolor ? props.backgroundcolor : 'black'};
         position: absolute;
         width: 100vw;
-        padding-top: 4rem;
-        z-index: 99;
+        paddinfrg-top: 4rem;
+        z-index: 998;
         transition: 0.8s;
         left: 0;
         top: 100%;
@@ -187,7 +187,7 @@ export const NavMenu = styled.div`
             align-items: center;
             min-height: 70px;
             height: fit-content;
-            background-color: rgb(1, 209, 60);
+            background-color: ${props => props.backgroundcolor ? props.backgroundcolor : 'black'};
             visibility: visible;
             animation: ${fadeIn} 0.5s linear forwards;
         }

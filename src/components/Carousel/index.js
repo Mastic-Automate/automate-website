@@ -15,6 +15,7 @@ import { Container,
         ButtonContainer,
         SlideButton} from './styles'
 
+
 function Carousel() {
 
     document.addEventListener("DOMContentLoaded", function(event) {
