@@ -1,5 +1,5 @@
 import React from 'react';
-import './CheckoutPage_address.css';
+import './CheckoutPage.css';
 import holographicTomato from '../../../img/tomateHolografico.png';
 
 function CheckoutPage_address() {
@@ -40,7 +40,7 @@ function CheckoutPage_address() {
                 </div>
             </div>
             <div className='col bg-primary'>
-                <img src={holographicTomato}></img>
+                <img src={holographicTomato} alt='Tomate holográfico'></img>
             </div>
         </section>
     )

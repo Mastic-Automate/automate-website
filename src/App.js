@@ -3,7 +3,7 @@ import React from "react";
 import LandingPage from './components/pages/LandingPage';
 import EnterprisePage from './components/pages/EnterprisePage';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import CheckoutPage_address from './components/pages/CheckoutPage_address';
+import CheckoutPage from './components/pages/CheckoutPage';
 
 
 
@@ -14,7 +14,7 @@ export default function App() {
           <Routes>
             <Route path='/' element={ <LandingPage /> } />
             <Route path="/mastic" element={ <EnterprisePage /> } />
-            <Route path="/checkoutPage_address" element={ <CheckoutPage_address /> } />
+            <Route path="/checkoutPage_address" element={ <CheckoutPage /> } />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </BrowserRouter>
