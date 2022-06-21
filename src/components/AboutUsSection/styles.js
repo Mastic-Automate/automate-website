@@ -44,7 +44,7 @@ export const Container = styled.div`
 
 export const AboutUsDetails = styled.div`
     width: 100%;
-    height: calc(100% - 260px);
+    min-height: calc(100% - 260px);
     padding-bottom: 10rem;
     min-height: 750px;
     display: flex;

@@ -1,7 +1,7 @@
 import React from 'react'
-import enterpriseLogo from '../../img/logo-mastic-removedBG.png';
-
+import enterpriseLogo from '../../assets/img/logo-mastic-removedBG.png';
 import { FooterWrapper, Container, OurPriorities, ContainerPriorities, BGGreen, Title, Projects, Project, FastLinks } from './styles';
+
 
 export default function EnterpriseFooter() {
     return (

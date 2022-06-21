@@ -20,11 +20,11 @@
 }
 
 #meioAmbiente {
-    background-image: url('../../img/meio-ambiente.png');
+    background-image: url('../../assets/img/meio-ambiente.png');
 }
 
 #periferias {
-    background-image: url('../../img/periferias.png');
+    background-image: url('../../assets/img/periferias.png');
 }
 
 .problematic-wrapper .card {
