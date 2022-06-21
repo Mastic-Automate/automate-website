@@ -9,7 +9,12 @@ import victor from '../../img/victor.jpeg';
 import yanCarlos from '../../img/yanCarlos.jpeg';
 import yanMendonca from '../../img/yanMendonca.jpeg';
 
-import { Container, Items, Item, ButtonContainer, SlideButton  } from './styles';
+import { Container,
+        Items,
+        Item,
+        ButtonContainer,
+        SlideButton} from './styles'
+
 
 function Carousel() {
 
@@ -21,6 +26,7 @@ function Carousel() {
         let current = 0;
         let prev = 7;
         let next = 1;
+        
 
         for (let i = 0; i < slideButton.length; i++) {
             slideButton[i].addEventListener('click', () => i === 0 ? gotoPrev() : gotoNext());
