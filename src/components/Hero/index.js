@@ -1,31 +1,38 @@
 import React from "react";
 import TextElement from "../TextElement";
-import './Hero.css'
+
+import { HeroWrapper, Container } from './styles';
 
 function Hero(props) {
     const {imgSide, src, alt, title, text} = props
     if (text && imgSide && src) {    
         if (imgSide === 'right') { 
             return (
-                <section className="hero">
-                    <TextElement title={title} text={text} /> 
-                    <img src={src} alt={alt} />
-                </section> 
+                <HeroWrapper className="hero">
+                    <Container>
+                        <TextElement title={title} text={text} /> 
+                        <img src={src} alt={alt} />
+                    </Container>
+                </HeroWrapper> 
             )
         }
 
         return ( 
-            <section className="hero">
-                <img src={src} alt={alt} />
-                <TextElement title={title} text={text} />
-            </section>
+            <HeroWrapper className="hero">
+                <Container>
+                    <img src={src} alt={alt} />
+                    <TextElement title={title} text={text} />
+                </Container>     
+            </HeroWrapper>
         )
     }
 
     return (
-        <section className="hero">
-            {title}
-        </section>
+        <HeroWrapper className="hero">
+            <Container>
+                {title}
+            </Container> 
+        </HeroWrapper>
     )
 
 }
