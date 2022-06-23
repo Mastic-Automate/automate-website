@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
 import { Container, Items, Item, ButtonContainer, SlideButton, Title, Texts, SubTitle, Description  } from './styles';
-function Carousel({data}) {
+
+function Carousel({data, time}) {
     const [current, setCurrent] = useState(1)
 
     const handleCurrent = (number) => {
@@ -14,7 +15,15 @@ function Carousel({data}) {
         setCurrent(number)
     }
 
-    useEffect(() => {}, [])
+    useEffect(() => {
+        const next = current + 1
+        if (time) {
+            const timer = setInterval(() => {
+                handleCurrent(next)
+            }, time);
+            return () => clearInterval(timer);
+        }
+    }, [current]);
 
     const classesID = {
         'prev': (current - 1) > 0 ? (current - 1) : data.length,

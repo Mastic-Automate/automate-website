@@ -20,7 +20,7 @@ export default function AboutUs() {
                         </Container>
                 </AboutUsHeader>
 
-                <Carousel data={team} />
+                <Carousel data={team} time={5000} />
 
                 <AboutUsDetails className='about-us-details'>
                     <ContainerDetails className='container-details'>

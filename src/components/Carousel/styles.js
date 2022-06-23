@@ -6,7 +6,7 @@ export const Container = styled.section`
     display: flex;
     align-items: flex-start;
     font-family: Oswald;
-
+    margin: 100px 0;
 `;
 
 export const Texts = styled.div`
@@ -43,18 +43,19 @@ export const Items = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: contain;
 `;
 
     export const Item = styled.div`
         position: absolute;
-        width: 100%;
-        max-width: 400px;
+        width: 400px;
         height: 400px;
         overflow: hidden;
         transition: all 500ms ease-in-out;
         z-index: -1;
         opacity: 0;
         border-radius: 100%;
+        object-fit: contain;
 
         & img {
             width: 100%;

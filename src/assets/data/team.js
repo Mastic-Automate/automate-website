@@ -2,49 +2,49 @@ const team = [
     {
         id: 1,
         name: 'Bianca Santos Alves',
-        description: 'A melhor, apenas',
+        description: 'Administradora de Banco de Dados',
         image: require('../img/bianca.jpeg')
     },
     {
         id: 2,
-        name: 'Gabriel Brandão',
-        description: 'dlc',
+        name: 'Gabriel Carvalho Brandão',
+        description: 'Desenvolvedor Backend',
         image: require('../img/gabriel.jpeg')
     },
     {
         id: 3,
-        name: 'Gustavo Alguempoemsobrenome',
-        description: 'sim',
+        name: 'Gustavo dos Santos Ferreira',
+        description: 'Secretário',
         image: require('../img/gustavo.jpeg')
     },
     {
         id: 4,
-        name: 'kevão',
-        description: 'Sett',
+        name: 'Kevin Leandro Peters Sampaio',
+        description: 'Analista de Documentação',
         image: require('../img/kevin.jpeg')
     },
     {
         id: 5,
         name: 'Simone Lopes Santos',
-        description: 'botanica',
+        description: 'Desenvolvedora FrontEnd',
         image: require('../img/simone.jpeg')
     },
     {
         id: 6,
         name: 'Victor Lira Carlos de Paula',
-        description: 'é o frontas',
+        description: 'Desenvolvedor FrontEnd',
         image: require('../img/victor.jpeg')
     },
     {
         id: 7,
         name: 'Yan Carlos',
-        description: 'éoduirnos',
+        description: 'CEO',
         image: require('../img/yanCarlos.jpeg')
     },
     {
         id: 8,
         name: 'Yan Mendonça Coutinho',
-        description: 'kekw n aguento mais trabai no saite',
+        description: 'Desenvolvedor BackEnd',
         image: require('../img/yanMendonca.jpeg')
     },
 ]
