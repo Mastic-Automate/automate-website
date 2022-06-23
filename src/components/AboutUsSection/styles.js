@@ -45,8 +45,8 @@ export const Container = styled.div`
 export const AboutUsDetails = styled.div`
     width: 100%;
     min-height: calc(100% - 260px);
-    padding-bottom: 10rem;
-    min-height: 750px;
+    padding-bottom: 5rem;
+    min-height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;

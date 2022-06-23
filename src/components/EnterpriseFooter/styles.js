@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+const media = {
+    tablet: `@media(max-width: 768px)`,
+    cell: `@media(max-width: 375px)`
+}
 
 export const FooterWrapper = styled.footer`
     display: flex;
@@ -23,15 +27,20 @@ export const FooterWrapper = styled.footer`
 
 export const BGGreen = styled.div`
     position: absolute;
-    width: clamp(100px, 41%, 3200px);
+    width: clamp(50px, 50%, 3200px);
     height: 100%;
     left: 0;
     background: #4F8735;
     z-index: 1;
+
+    ${media.tablet} {
+        display: none;
+    }
 `;
 
 export const Container = styled.div`
-    width: 90%;
+    background-color: #242434;
+    width: 100%;
     max-width: 1400px;
     height: 100%;
     margin: 0 auto;
@@ -40,11 +49,16 @@ export const Container = styled.div`
     align-items: center;
     z-index: 2;
     
+    ${media.tablet} {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 `;
 
 export const OurPriorities = styled.div`
     width: 45%;
-    min-width: 350px;
+    min-width: 400px;
     height: 100%;
     font-size: 1.7rem;
     padding: 4rem 6rem;
@@ -54,6 +68,10 @@ export const OurPriorities = styled.div`
 
     & p { 
         text-align: justify;
+    }
+
+    ${media.tablet} {
+        width: 100%;
     }
 `;
 
@@ -84,16 +102,28 @@ export const Title = styled.div`
 
 `;
 
+export const LinksWrapper = styled.div`
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    
+
+    ${media.tablet} {
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+`;
+
 export const Projects = styled.div`
-    width: 20%;
-    padding-left: 6rem;
-    min-width: 320px;
+    text-align: left;
 `;
 
 export const Project = styled.div`
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     margin-top: 2rem;
 
     &:first-child() {
@@ -115,9 +145,7 @@ export const Project = styled.div`
 `;
 
 export const FastLinks = styled.div`
-    width: 48%;
     text-align: left;
-    margin-left: 2rem;
 
     & h2 {
         width: 100%;
@@ -135,4 +163,5 @@ export const FastLinks = styled.div`
         margin-top: 2rem;
         margin-left: 0.4rem;
     }
+
 `;
