@@ -78,7 +78,7 @@ export const HeaderWrapper = styled.header`
 
 export const Container = styled.div`
     width: 90%;
-    max-width: 1110px;
+    max-width: 1300px;
     height: 100%;
     margin: 0 auto;
     display: flex;
