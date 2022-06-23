@@ -1,24 +1,29 @@
 import React from "react";
 import TextElement from "../TextElement";
-import './RegularSection.css'
+
+import { RegularSectionWrapper, Container } from './styles';
 
 function RegularSection(props) {
     const {imgSide, src, alt, title, text} = props
 
     if (imgSide === 'right') { 
         return (
-            <section className="regular-section">
-                <TextElement title={title} text={text} /> 
-                <img src={src} alt={alt} />
-            </section> 
+            <RegularSectionWrapper className="regular-section">
+                <Container>
+                    <TextElement title={title} text={text} /> 
+                    <img src={src} alt={alt} />
+                </Container>
+            </RegularSectionWrapper> 
         )
     } 
     
     return ( 
-        <section className={`regular-section ${imgSide}`}>
-            <img src={src} alt={alt} />
-            <TextElement title={title} text={text} />
-        </section>
+        <RegularSectionWrapper className={`regular-section ${imgSide}`}>
+            <Container>
+                <img src={src} alt={alt} />
+                <TextElement title={title} text={text} />
+            </Container>  
+        </RegularSectionWrapper>
     )
 }
 
