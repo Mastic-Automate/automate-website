@@ -4,7 +4,7 @@ export const Container = styled.section`
     width: 100%;
     min-height: 500px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     font-family: Oswald;
     margin: 100px 0;
 `;
