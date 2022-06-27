@@ -5,6 +5,7 @@ const media = {
 };
 
 export const HeroWrapper = styled.section`
+    width: 100vw;
     height: 60vw;
     max-height: 1024px;
     display: flex;
@@ -28,6 +29,17 @@ export const HeroWrapper = styled.section`
         color: var(--color-text);
     }
 
+`;
+
+export const Container = styled.div`
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     ${media.tablet} {
         flex-direction: column-reverse;
         justify-content: center;
@@ -41,15 +53,4 @@ export const HeroWrapper = styled.section`
             max-height: calc(50vh - 10rem);
         }
     }
-
-`;
-
-export const Container = styled.div`
-    width: 90%;
-    max-width: 1300px;
-    height: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 `;
