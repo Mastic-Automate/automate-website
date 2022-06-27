@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import RenderLinks from './RenderLinks';
 
 const media = {
     tablet: '@media(max-width: 960px)',
@@ -150,7 +151,7 @@ export const NavMenu = styled.div`
         background-color: ${props => props.backgroundcolor ? props.backgroundcolor : 'black'};
         position: absolute;
         width: 100vw;
-        paddinfrg-top: 4rem;
+        padding-top: 4rem;
         z-index: 998;
         transition: 0.8s;
         left: 0;
@@ -190,6 +191,27 @@ export const NavMenu = styled.div`
             background-color: ${props => props.backgroundcolor ? props.backgroundcolor : 'black'};
             visibility: visible;
             animation: ${fadeIn} 0.5s linear forwards;
+        }
+    }
+`;
+
+export const Link = styled.a`
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: #fff;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        transition: 1s;
+    }
+
+    &:hover {
+        &::before{
+            width: 100%;
         }
     }
 `;
