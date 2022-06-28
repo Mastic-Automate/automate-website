@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react';
 
-import { Container, Items, Item, ButtonContainer, SlideButton, Title, Texts, SubTitle, Description  } from './styles';
+import { Container,
+        Items,
+        Item,
+        ButtonContainer,
+        SlideButton,
+        Title,
+        Texts,
+        SubTitle,
+        Description  } from './styles';
 
 function Carousel({data, time}) {
     const [current, setCurrent] = useState(1)

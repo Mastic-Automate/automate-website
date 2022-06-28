@@ -4,8 +4,9 @@ export const Container = styled.section`
     width: 100%;
     min-height: 500px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    font-family: Oswald;
+    font-family: 'Oswald';
     margin: 100px 0;
 `;
 
