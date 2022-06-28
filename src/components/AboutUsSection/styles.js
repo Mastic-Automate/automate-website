@@ -16,7 +16,6 @@ export const AboutUsHeader = styled.div`
     padding: 2rem 0;
     height: 100%;
     width: 100%;
-    max-width: 1300px;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -49,6 +48,15 @@ export const AboutUsHeader = styled.div`
         }
     }
 `;
+
+    export const AboutUsHeaderContainer = styled.div`
+        width: 90%;
+        max-width: 1300px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    `;
 
 export const AboutUsDetails = styled.div`
     width: 100%;

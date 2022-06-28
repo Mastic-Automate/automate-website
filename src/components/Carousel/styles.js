@@ -18,22 +18,30 @@ export const Texts = styled.div`
 export const Title = styled.h1`
     text-align: center;
     width: 100%;
+
+    font-family: 'Nasalization';
 `;
 
 export const SubTitle = styled.h1`
     text-align: center;
     width: 100%;
     transition: .8s;
+
+    font-family: 'Oswald-ExtraLight';
+    opacity: 0.7;
 `;
 
 export const Description = styled.p`
     padding: 0 10% 0 10%;
     margin-top: -15px;
     margin-bottom: 50px;
-    font-size: 25px;
     text-align: center;
     width: 100%;
     color: white;
+
+    font-family: 'Oswald-ExtraLight';
+    opacity: 0.7;
+    font-size: 25px;
 `;
 
 export const Items = styled.div`

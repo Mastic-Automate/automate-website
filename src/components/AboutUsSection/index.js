@@ -5,6 +5,7 @@ import team from '../../assets/data/team.js'
 
 import { AboutUsWrapper,
         AboutUsHeader,
+        AboutUsHeaderContainer,
         AboutUsDetails,
         ContainerDetails,
         Detail } from './styles';
@@ -13,8 +14,11 @@ export default function AboutUs() {
     return (
         <AboutUsWrapper id='about-us'>
             <AboutUsHeader className='about-us-header'>    
+                <AboutUsHeaderContainer>
                     <img src={ enterpriseLogo } alt='Logo Mastic' />
                     <h2>Uma empresa ecológica</h2>
+                </AboutUsHeaderContainer>
+                    
             </AboutUsHeader>
 
             <Carousel data={team} time={5000} />
