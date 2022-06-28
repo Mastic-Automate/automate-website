@@ -23,7 +23,7 @@ function Carousel({data, time}) {
             }, time);
             return () => clearInterval(timer);
         }
-    }, [current]);
+    }, );
 
     const classesID = {
         'prev': (current - 1) > 0 ? (current - 1) : data.length,

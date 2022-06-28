@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-import RenderLinks from './RenderLinks';
 
 const media = {
     tablet: '@media(max-width: 960px)',
@@ -124,7 +123,7 @@ export const MenuIcon = styled.div`
             }
             
             &.on .three {
-                transform: rotate(-45deg) translate(1px, -9px);
+                transform: rotate(-45deg) translate(1px, -7.5px);
             }
         }
 

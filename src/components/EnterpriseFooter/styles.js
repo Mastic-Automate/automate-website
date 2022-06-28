@@ -58,8 +58,9 @@ export const Container = styled.div`
 
 export const OurPriorities = styled.div`
     width: 45%;
-    min-width: 400px;
-    height: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
     font-size: 1.7rem;
     padding: 4rem 6rem;
     background-image: linear-gradient(to left,#42702E, #4F8735);
@@ -72,21 +73,17 @@ export const OurPriorities = styled.div`
 
     ${media.tablet} {
         width: 100%;
+        padding: 4rem 3rem;
     }
-`;
 
-    export const ContainerPriorities = styled.div`
-        width: 100%;
-        max-width: 320px;
-        display: flex;
-        flex-direction: column;
-    `;
+`;
 
 export const Title = styled.div`
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 2rem;
 
     & img {
         max-width: 85px;
@@ -94,11 +91,10 @@ export const Title = styled.div`
 
     & h2 {
         width: 60%;
-        margin: auto;
         text-align: left;
         border-left: 1px solid white;
         padding-left: 2rem;
-    }
+    }   
 
 `;
 

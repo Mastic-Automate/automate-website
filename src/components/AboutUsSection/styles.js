@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const media = {
     tablet: '@media(max-width: 960px)',
+    mobile: '@media(max-width: 500px)',
 }
 
 export const AboutUsWrapper = styled.section`
@@ -13,7 +14,13 @@ export const AboutUsWrapper = styled.section`
 export const AboutUsHeader = styled.div`
     background-image: linear-gradient(to left, #267B00, #123C00 );
     padding: 2rem 0;
+    height: 100%;
     width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
 
     & img {
         max-width: 200px;
@@ -30,16 +37,17 @@ export const AboutUsHeader = styled.div`
         font-family: 'Oswald-ExtraLight';
     }
 
-`;
+    ${media.tablet} {
+        
+        & img {
+            max-width: 100px;
+        }
 
-export const Container = styled.div`
-    width: 100%;
-    max-width: 1300px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+        & h2 {
+            font-size: 4rem;
+            text-align: center;
+        }
+    }
 `;
 
 export const AboutUsDetails = styled.div`

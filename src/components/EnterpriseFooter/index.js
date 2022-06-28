@@ -3,7 +3,6 @@ import enterpriseLogo from '../../assets/img/logo-mastic-removedBG.png';
 import { FooterWrapper,
         Container,
         OurPriorities, 
-        ContainerPriorities, 
         BGGreen, 
         Title, 
         Projects, 
@@ -18,14 +17,12 @@ export default function EnterpriseFooter() {
             <BGGreen></BGGreen>
             <Container>
                 <OurPriorities className='our-priorities'>
-                    <ContainerPriorities>
                         <Title className='title'>
                             <img src={ enterpriseLogo } alt='Logo da Mastic' />
                             <h2>Nossas Prioridades</h2>
                         </Title>
                         
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    </ContainerPriorities>
                 </OurPriorities>
                 <LinksWrapper>
                     <Projects className='projects'>
