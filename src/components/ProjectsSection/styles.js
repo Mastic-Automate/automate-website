@@ -12,7 +12,7 @@ export const ProjectsWrapper = styled.section`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
     max-width: 1300px;
     min-height: 630px;
     background-image: url(${projectsBG});
