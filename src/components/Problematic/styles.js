@@ -64,6 +64,9 @@ export const Card = styled.div`
             border: 1px solid #fff;
             border-radius: 10px;
             transition: 0.5s;
+
+            font-size: 1.5rem;
+            font-family: 'Oswald';
         }
 
             & .card-button:hover {
@@ -75,7 +78,9 @@ export const Card = styled.div`
             text-align: justify;
             color: #fff;
             opacity: 80%;
+
             font-size: 2rem;
+            font-family: 'Oswald';
             font-weight: lighter;
         }
     `;
@@ -90,6 +95,8 @@ export const Card = styled.div`
             font-size: 3.7rem;
             color: #fff;
             margin-left: 10px;
+
+            font-family: 'Nasalization';
         }
     `;
 
@@ -134,7 +141,9 @@ export const TitleWrapper = styled.div`
             display: flex;
             align-items: center;
             margin: 0 10px;
+
             font-size: 2.5rem;
+            font-family: 'Nasalization';
             text-transform: uppercase;
         }
 
