@@ -6,15 +6,17 @@ const media = {
 };
 
 export const RegularSectionWrapper = styled.section`
-    height: 100vh;
-    max-height: 1024px;
     width: 100vw;
+    max-width: 1300px;
+    height: calc(100vh - 10rem);
+    max-height: 1300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 5rem auto;
 
     & img {
-        max-width: 45%;
+        max-width: 50%;
         max-height: calc(100% - 10rem);
     }
 
@@ -32,15 +34,4 @@ export const RegularSectionWrapper = styled.section`
         }
     }
 
-`;
-
-
-export const Container = styled.div`
-    width: 100%;
-    max-width: 1300px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 `;

@@ -1,16 +1,19 @@
 import styled from "styled-components";
+import {RegularSectionWrapper} from "../RegularSection/styles.js";
 
 const media = {
     tablet: '@media(max-width: 700px)',
 };
 
-export const HeroWrapper = styled.section`
+export const HeroWrapper = styled(RegularSectionWrapper)`
     width: 100vw;
-    height: 60vw;
-    max-height: 1024px;
+    max-width: 1300px;
+    height: 100vh;
+    max-height: 1300px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 0;
 
     & img {
         width: 100%;
@@ -29,28 +32,7 @@ export const HeroWrapper = styled.section`
         color: var(--color-text);
     }
 
-`;
-
-export const Container = styled.div`
-    width: 100%;
-    max-width: 1300px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     ${media.tablet} {
-        flex-direction: column-reverse;
-        justify-content: center;
-
-        &.right {
-            flex-direction: column;
-        }
-
-        & img {
-            max-width: 100%;
-            max-height: calc(50vh - 10rem);
-        }
+        margin-top: 5rem;
     }
 `;

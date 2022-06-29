@@ -8,22 +8,20 @@ import RenderLinks from '../Header/RenderLinks';
 
 function ProductSection({links, closeMenu}) {
   return (
-      <section className='productSection-wrapper'>
-          <div className='container'>
-              <div className='col flex-col'>
+    <section className='productSection-wrapper'>
+            <div className='col flex-col automate'>
                 <h1 className='primary-title'>Automate</h1>
-                <p className='primary-text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                
-                
+                <p className='primary-text'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            
+            
                 <div href="#" className='primary-btn'>
                     <RenderLinks links={links} click={closeMenu}/>
                 </div>
-              </div>
-              <div className='col col-img'>
-                  <img src={holographicTomato} alt='Tomate Holográfico'/>
-              </div>
-          </div>
-      </section>
+            </div>
+            <div className='col flex-col'>
+                <img src={holographicTomato} alt='Tomate Holográfico'/>
+            </div>
+    </section>
   );
 }
 

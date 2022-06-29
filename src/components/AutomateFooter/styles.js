@@ -7,7 +7,9 @@ export const FooterAutomate = styled.footer`
     flex-direction: column;
     height: 100vh;
     max-height: 1024px;
-    width: 100vw;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
 
     &.automate h3 {
         font-weight: 700;
@@ -18,20 +20,10 @@ export const FooterAutomate = styled.footer`
     }
 
     &.automate p {
-        padding-left: 30px;
+        padding: 0px 15px;
         line-height: 5.273rem;
         font-size: 4.5rem;
         color: var(--color-secondary-text);
         max-width: 1216px;
     }
-`;
-
-export const Container = styled.div`
-    width: 100%;
-    max-width: 1300px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 `;
