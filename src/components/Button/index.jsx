@@ -1,6 +1,14 @@
 import styled from 'styled-components'
 
-const StyledButton = styled.button`
+
+function Button({children, className,...props}){
+    return (
+        <button {...props} className={className}>
+            {children}
+        </button>
+    )
+}
+const StyledButton = styled(Button)`
     background-color: ${props => props.type === 'primary'? '#22C27F' : 'transparent'};
     border: ${props => props.type === 'primary'? 'none' : '2px solid white'};
     width: 90%;
@@ -25,10 +33,4 @@ const StyledButton = styled.button`
     }
 `
 
-export function Button({children, onClick, type="primary", ...props}){
-    return (
-        <StyledButton type={type} onClick={onClick} {...props}>
-            {children}
-        </StyledButton>
-    )
-}
+export {StyledButton as Button}

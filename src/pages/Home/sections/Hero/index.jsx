@@ -13,8 +13,6 @@ const media = {
 
 
 const HeroWrapper = styled.section`
-    @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
-
     background-color: #1D202D;
     width: 100%;
     min-height: 100vh;
@@ -170,7 +168,7 @@ export function HeroSection(){
                             Cultive plantas de forma automática, sustentável e limpa com nosso produto
                         </p>
                         <ButtonsContainer>
-                            <Button>
+                            <Button type="primary">
                                 Mais sobre
                             </Button>
                             <Button type="secondary">
