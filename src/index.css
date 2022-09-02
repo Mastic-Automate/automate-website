@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 body {
   margin: 0;
   display: flex;
@@ -5,6 +6,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
 
 ::-webkit-scrollbar {
   width: 0px;
