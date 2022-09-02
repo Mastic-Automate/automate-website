@@ -1,0 +1,60 @@
+.section-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 auto;
+}
+
+.section-text h1 {
+    font-weight: 700;
+    font-size: 7rem;
+    line-height: 8.2rem;
+    max-width: 48%;
+    color: var(--color-secondary-title);
+}
+
+.section-text p {
+    font-size: 5.5rem;
+    line-height: 6.445rem;
+    font-weight: 400;
+    max-width: 48%;
+    color: var(--color-secondary-text);
+
+}
+
+@media (max-width: 788px) {
+    .section-text h1 {
+        max-width: 50%;
+        font-size: 6rem;
+    }
+    .section-text p {
+        max-width: 50%;
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 788px) {
+    .section-text h1 {
+        max-width: 50%;
+        font-size: 5.5rem;
+    }
+    .section-text p {
+        max-width: 50%;
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .section-text {
+        width: 100%;
+    }
+
+    .section-text h1 {
+        max-width: 100%;
+    }
+    .section-text p {
+        max-width: 100%;
+    }
+}

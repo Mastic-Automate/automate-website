@@ -1,0 +1,11 @@
+@media (max-width: 600px) {
+    .productSection-wrapper .col img {
+        width: 500px;
+        height: 500px;
+        margin: 0;
+    }
+
+    .productSection-wrapper .col.automate {
+        padding: 0;
+    }
+}
