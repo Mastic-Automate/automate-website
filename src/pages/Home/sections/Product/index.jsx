@@ -4,6 +4,7 @@ import { Button } from '../../../../components/Button'
 import {GradientOverlay} from '../gradientOverlay'
 
 const ProductWrapper = styled.section`
+    background-color: #1D202D;
     scroll-snap-align: start;
     height: 100vh;
     display:flex;

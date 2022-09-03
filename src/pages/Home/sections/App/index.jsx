@@ -3,6 +3,7 @@ import { GradientOverlay } from '../gradientOverlay';
 
 const AppWrapper = styled.section`
     scroll-snap-align: start;
+    background-color: #1D202D;
     height: 100vh;
     display:flex;
     flex-flow: column nowrap;
