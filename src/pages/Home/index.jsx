@@ -7,12 +7,12 @@ import { ProductSection } from './sections/Product'
 
 const Container = styled.div`
     overflow-y: scroll;
-    /* background-color: #1D202D; */
-    background: red;
+    background-color: #1D202D;
     height: 100vh;
     max-width: 100vw;
     padding: 0;
     margin: 0;
+    box-sizing:border-box;
     @media(min-width: 1000px){
         scroll-snap-type:y mandatory;
     }
