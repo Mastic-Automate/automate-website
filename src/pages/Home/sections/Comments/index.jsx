@@ -1,10 +1,10 @@
-import { Columns } from 'phosphor-react';
 import styled from 'styled-components'
 import { CommentCard } from '../../../../components/CommentCard'
 import { MarkedText } from '../../MarkedText'
 import { GradientOverlay } from '../gradientOverlay';
 
 const CommentsWrapper = styled.section`
+    background-color: #1D202D;
     scroll-snap-align: start;
     min-height: 100vh;
     position: relative;

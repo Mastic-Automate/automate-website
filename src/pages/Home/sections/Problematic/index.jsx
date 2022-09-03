@@ -5,7 +5,7 @@ import { GradientOverlay } from "../gradientOverlay";
 
 const ProblematicWrapper = styled.section`
     background-color: #1D202D;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     display:flex;
     flex-flow: row nowrap;

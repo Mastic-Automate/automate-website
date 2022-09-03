@@ -10,6 +10,9 @@ const Container = styled.div`
     background-color: #1D202D;
     height: 100vh;
     max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
     @media(min-width: 1000px){
         scroll-snap-type:y mandatory;
     }

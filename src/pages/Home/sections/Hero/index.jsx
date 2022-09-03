@@ -14,7 +14,7 @@ const media = {
 
 const HeroWrapper = styled.section`
     background-color: #1D202D;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     display:flex;
     flex-flow: row wrap;
@@ -46,32 +46,31 @@ const Col1 = styled.div`
     > * {
         z-index: 2;
     }
-    
-    @media(min-width: 600px){
-        padding-right: 48px;
-        padding-left: 48px;
-    }
 
     h1 {
         font-size: 90px;
         font-family: 'Modak', cursive;
         font-weight: 400;
+        margin: 0;
+        text-align: center;
 
         color:white;
         z-index: 2;
         text-transform: Uppercase;
 
-        ${media.tablet} {
+        @media(max-width: 600px){
             font-size: 70px;
+        }
+        @media(max-width: 400px){
+            font-size: 50px;
         }
     }
     p{
         font-size: 20px;
         color:white;
         z-index: 2;
-        @media(max-width: 350px){
-            font-size: 16px;
-        }
+        width: 100%;
+        text-align: center;
     }
 `
 
@@ -88,7 +87,8 @@ const HeroCard = styled.div`
 const ButtonsContainer = styled.div`
     display:flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    align-content: center;
     width: 100%;
     gap: 8px;
 
@@ -102,9 +102,6 @@ const Col2 = styled.div`
     justify-content: center;
     align-items: center;
     min-width: 300px;
-
-    padding-right: 4px;
-    padding-left: 4px;
 
     > * {
         z-index: 2;
@@ -140,17 +137,17 @@ const VideoPlayer = styled.video`
     }
 `
 
-    const SourceVideo = styled.source`
-        z-index: 2;
-    `;
-    
-    const ObjectVideo = styled.object`
-        z-index: 2;
-    `;
+const SourceVideo = styled.source`
+    z-index: 2;
+`;
 
-    const EmbedVideo = styled.embed`
-        z-index: 2;
-    `;
+const ObjectVideo = styled.object`
+    z-index: 2;
+`;
+
+const EmbedVideo = styled.embed`
+    z-index: 2;
+`;
 
 export function HeroSection(){
     return (
