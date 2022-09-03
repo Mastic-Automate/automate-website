@@ -28,9 +28,6 @@ const StyledButton = styled(Button)`
         font-size: 16px;
         padding: 4px 16px;
     }
-    @media(max-width: 350px){
-        font-size: 12px;
-    }
 `
 
 export {StyledButton as Button}

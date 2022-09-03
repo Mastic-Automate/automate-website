@@ -69,9 +69,8 @@ const Col1 = styled.div`
         font-size: 20px;
         color:white;
         z-index: 2;
-        @media(max-width: 350px){
-            font-size: 16px;
-        }
+        width: 100%;
+        text-align: center;
     }
 `
 
@@ -88,7 +87,7 @@ const HeroCard = styled.div`
 const ButtonsContainer = styled.div`
     display:flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: center;
     width: 100%;
     gap: 8px;

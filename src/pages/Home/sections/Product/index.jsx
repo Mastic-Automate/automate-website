@@ -23,6 +23,7 @@ const ProductWrapper = styled.section`
         font-weight: 400;
         line-height: 60px;
         font-size: 91px;
+        text-align:center;
 
         @media(max-width: 800px){
             font-size: 60px;
@@ -84,7 +85,7 @@ export function ProductSection(){
                     <p>
                         Nosso dispositivo é capaz de monitorar o solo de um vaso de planta e mante-lo úmido para garantir o crescimento saudável de sua planta
                     </p>
-                    <Button>
+                    <Button type="primary">
                         Comprar
                     </Button>
                 </Card>
