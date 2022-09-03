@@ -46,23 +46,23 @@ const Col1 = styled.div`
     > * {
         z-index: 2;
     }
-    
-    @media(min-width: 600px){
-        padding-right: 48px;
-        padding-left: 48px;
-    }
 
     h1 {
         font-size: 90px;
         font-family: 'Modak', cursive;
         font-weight: 400;
+        margin: 0;
+        text-align: center;
 
         color:white;
         z-index: 2;
         text-transform: Uppercase;
 
-        ${media.tablet} {
+        @media(max-width: 600px){
             font-size: 70px;
+        }
+        @media(max-width: 400px){
+            font-size: 50px;
         }
     }
     p{
@@ -89,6 +89,7 @@ const ButtonsContainer = styled.div`
     display:flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    align-content: center;
     width: 100%;
     gap: 8px;
 
@@ -102,9 +103,6 @@ const Col2 = styled.div`
     justify-content: center;
     align-items: center;
     min-width: 300px;
-
-    padding-right: 4px;
-    padding-left: 4px;
 
     > * {
         z-index: 2;
@@ -140,17 +138,17 @@ const VideoPlayer = styled.video`
     }
 `
 
-    const SourceVideo = styled.source`
-        z-index: 2;
-    `;
-    
-    const ObjectVideo = styled.object`
-        z-index: 2;
-    `;
+const SourceVideo = styled.source`
+    z-index: 2;
+`;
 
-    const EmbedVideo = styled.embed`
-        z-index: 2;
-    `;
+const ObjectVideo = styled.object`
+    z-index: 2;
+`;
+
+const EmbedVideo = styled.embed`
+    z-index: 2;
+`;
 
 export function HeroSection(){
     return (

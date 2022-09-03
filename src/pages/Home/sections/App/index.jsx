@@ -65,7 +65,8 @@ const BgAppImage = styled.img`
     @media(max-width:600px){
         left: 4px;
     }
-    height: 100%;
+    height: auto;
+    max-width: 90vw;
 `
 
 export function AppSection(){
