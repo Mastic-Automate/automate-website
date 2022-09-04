@@ -176,7 +176,7 @@ export function HeroSection(){
                         </div>
                         
                         <ButtonsContainer>
-                            <Button>
+                            <Button type="primary">
                                 Mais sobre
                             </Button>
                             <Button type="secondary">

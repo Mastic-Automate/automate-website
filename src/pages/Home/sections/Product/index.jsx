@@ -105,7 +105,7 @@ export function ProductSection(){
                         </p>
                     </div>
                     
-                    <Button>
+                    <Button type="primary">
                         Comprar
                     </Button>
                 </Card>

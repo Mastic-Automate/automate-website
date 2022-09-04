@@ -12,6 +12,7 @@ const Container = styled.div`
     border-radius: 16px;
     border: 1px solid #263238;
     padding: 30px;
+    box-sizing:border-box;
     backdrop-filter: blur(10px);
     z-index: 2;
 
