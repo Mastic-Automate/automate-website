@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import { GradientOverlay } from '../gradientOverlay';
 
 const AppWrapper = styled.section`
-    @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
-
     scroll-snap-align: start;
     height: 100vh;
     display:flex;
@@ -11,7 +9,7 @@ const AppWrapper = styled.section`
     align-items:flex-end;
     justify-content:center;
 
-    overflow: hidden;
+    overflow-x: hidden;
 
     position: relative;
     scroll-snap-align: start;

@@ -14,7 +14,7 @@ const ProductWrapper = styled.section`
     flex-flow: column nowrap;
     justify-content: center;
     position: relative;
-    overflow: hidden;
+    overflow-y: hidden;
 
     h1, p {
         color: white;
