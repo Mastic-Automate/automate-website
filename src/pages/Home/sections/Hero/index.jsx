@@ -13,8 +13,9 @@ const media = {
 
 
 const HeroWrapper = styled.section`
+    @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
     background-color: #1D202D;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     display:flex;
     flex-flow: row wrap;
@@ -28,21 +29,22 @@ const Container = styled.div`
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
-
     ${media.tablet} {
-        flex-direction: column;
+        width: 90%;
+        flex-direction: column-reverse;
+        padding: 0 0 80px; 
     }
 `
 
 const Col1 = styled.div`
-    width: 100%;
+    width: 50%;
+    padding: 0 50px;
     flex:1;
     display:flex;
     flex-flow: column nowrap;
     align-items: flex-start;
     justify-content: center;
     z-index: 2;
-
     > * {
         z-index: 2;
     }
@@ -51,64 +53,74 @@ const Col1 = styled.div`
         font-size: 90px;
         font-family: 'Modak', cursive;
         font-weight: 400;
-        margin: 0;
-        text-align: center;
-
         color:white;
         z-index: 2;
         text-transform: Uppercase;
+        margin: 0;
 
-        @media(max-width: 600px){
-            font-size: 70px;
+        ${media.tablet} {
+            text-align: center;
+            font-size: 60px;
         }
-        @media(max-width: 400px){
-            font-size: 50px;
-        }
+
     }
     p{
         font-size: 20px;
         color:white;
         z-index: 2;
-        width: 100%;
+        opacity: .8;
+        font-family: Poppins;
+
+        @media(max-width: 350px){
+            font-size: 16px;
+        }
+    }
+    ${media.tablet} {
         text-align: center;
+        padding: 0;
+        width: 100%;
     }
 `
 
 const HeroCard = styled.div`
     width: 100%;
-    max-width: 450px;
     margin: 0 auto;
     height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+
+    ${media.tablet} {
+        justify-content: center;
+        height: 300px;
+    }
 `;
 
 const ButtonsContainer = styled.div`
     display:flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
+    flex-flow: row;
+    justify-content: flex-start;
     width: 100%;
     gap: 8px;
-
     z-index:1;
 `
 
 const Col2 = styled.div`
+    width: 50%;
+    padding: 0 50px;
     flex:1.5;
     display:flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     min-width: 300px;
-
     > * {
         z-index: 2;
     }
-
-    @media(max-width: 1000px){
+    ${media.tablet}{
         width: 100%;
+        padding: 0;
         flex-flow: row nowrap;
         align-items:center;
         justify-content:center;
@@ -126,28 +138,25 @@ const BgImage = styled.img`
 const VideoPlayer = styled.video`
     max-width: 700px;
     width: 100%;
-    height: 400px;
-    width: 100%;
     height: 430px;
     z-index: 2;
     object-fit: cover;
-
     @media(max-width: 600px){
         height: 200px;
     }
 `
 
-const SourceVideo = styled.source`
-    z-index: 2;
-`;
+    const SourceVideo = styled.source`
+        z-index: 2;
+    `;
+    
+    const ObjectVideo = styled.object`
+        z-index: 2;
+    `;
 
-const ObjectVideo = styled.object`
-    z-index: 2;
-`;
-
-const EmbedVideo = styled.embed`
-    z-index: 2;
-`;
+    const EmbedVideo = styled.embed`
+        z-index: 2;
+    `;
 
 export function HeroSection(){
     return (
@@ -160,12 +169,15 @@ export function HeroSection(){
                 
                 <Col1>
                     <HeroCard>
-                        <h1>Automate</h1>
-                        <p>
-                            Cultive plantas de forma automática, sustentável e limpa com nosso produto
-                        </p>
+                        <div>
+                            <h1>Automate</h1>
+                            <p>
+                                Cultive plantas de forma automática, sustentável e limpa com nosso produto
+                            </p>
+                        </div>
+                        
                         <ButtonsContainer>
-                            <Button type="primary">
+                            <Button>
                                 Mais sobre
                             </Button>
                             <Button type="secondary">

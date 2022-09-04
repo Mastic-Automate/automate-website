@@ -3,28 +3,26 @@ import styled from "styled-components"
 import {QuestionCard} from './QuestionCard'
 import { GradientOverlay } from "../gradientOverlay";
 
+const media = {
+    tablet: `@media only screen and (max-width: 768px)`,
+}
+
 const ProblematicWrapper = styled.section`
     background-color: #1D202D;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     display:flex;
     flex-flow: row nowrap;
     overflow-x: scroll;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    scroll-snap-align: start;
     position: relative;
-    scroll-snap-align: start;
-
-    @media(max-width: 1000px){
-        flex-flow: column nowrap;
-        align-items:center;
-    }
-
     
 `
 
 const Container= styled.div`
-    width: 90%;
+    width: 100%;
     max-width: 1300px;
     display:flex;
     flex-flow: row wrap;
@@ -40,17 +38,16 @@ const Section = styled.div`
     flex-flow: row wrap;
     display:flex;
     align-items:center;
-
     position: relative;
 
     h1 {
+        line-height: 30px;
+        padding-bottom: 50px;
         color: white;
         font-size: 91px;
         font-weight: 400;
         font-family: 'Modak', cursive;
-
-        line-height: 60px;
-        padding: 10px 0 40px 0;
+        margin: 0;
 
         @media(max-width: 800px){
             font-size: 60px;
@@ -59,7 +56,9 @@ const Section = styled.div`
             font-size: 40px;
         }
     }
+
     h3 {
+        line-height: 10px;
         font-family: 'Modak', cursive;
         font-weight: 400;
         font-size: 40px;
@@ -69,8 +68,12 @@ const Section = styled.div`
         }
     }
     p {
+
         font-size: 24px;
+        font-family: Poppins;
         color: #FFFFFF;
+        opacity: .8;
+        margin: 0;
         @media(max-width: 400px){
             font-size: 16px;
         }
@@ -95,7 +98,16 @@ const Column = styled.div`
 `;
 
 const ColumnText = styled.div`
+    height: 390px;
     max-width: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    ${media.tablet} {
+        height: 200px;
+        width: 100%;
+    }
 `;
 
 const CardsQuestionsImageBg = styled.img`
@@ -118,10 +130,13 @@ export function ProblematicSection(){
                     />
                     <Column>
                         <ColumnText>
-                            <h3>Automate é...</h3>
-                            <h1>
-                                <MarkedText>Renda</MarkedText> extra
-                            </h1>
+                            <div>
+                                <h3>Automate é...</h3>
+                                <h1>
+                                    <MarkedText>Renda</MarkedText> extra
+                                </h1>
+                            </div>
+                            
                             <p>
                                 Conhecemos nosso público alvo e sabemos que a grande maioria tem interesse em uma renda extra de forma prática
                             </p>
@@ -150,10 +165,13 @@ export function ProblematicSection(){
                     />
                     <Column>
                         <ColumnText>
-                            <h3>Automate é...</h3>
-                            <h1>
-                                <MarkedText>Acessível</MarkedText>
-                            </h1>
+                            <div>
+                                <h3>Automate é...</h3>
+                                <h1>
+                                    <MarkedText>Acessível</MarkedText>
+                                </h1>
+                            </div>
+                            
                             <p>
                                 Temos ciência do poder de compra de nosso público alvo, e sabemos quanto estão dispostos a pagar por nosso produto
                             </p>

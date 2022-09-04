@@ -1,14 +1,21 @@
+import { Columns } from 'phosphor-react';
 import styled from 'styled-components'
 import { CommentCard } from '../../../../components/CommentCard'
 import { MarkedText } from '../../MarkedText'
 import { GradientOverlay } from '../gradientOverlay';
 
+const media = {
+    tablet: `@media only screen and (max-width: 768px)`,
+}
+
 const CommentsWrapper = styled.section`
-    background-color: #1D202D;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
     min-height: 100vh;
     position: relative;
     width: 100%;
+
+    display: flex;
+    align-items: center;
 
     h1, p {
         z-index:2;
@@ -22,12 +29,11 @@ const CommentsWrapper = styled.section`
         line-height: 60px;
         margin: 0 0 25px;
 
-        @media(max-width: 800px){
-            font-size: 50px;
+        ${media.tablet} {
+            line-height: 30px;
+            font-size: 30px;
         }
-        @media(max-width: 400px){
-            font-size: 40px;
-        }
+
     }
 
     h3 {
@@ -44,12 +50,14 @@ const CommentsWrapper = styled.section`
         color:white;
         font-size: 18px;
         font-family: Poppins;
+        opacity: 0.8;
     }
 `
 
 const Container = styled.div`
     width: 100%;
     max-width: 1300px;
+    height: 100%;
 
     margin: 0 auto;
 
@@ -77,6 +85,7 @@ const Column = styled.div`
 
 const ColumnText = styled.div`
     width: 100%;
+
 `;
 
 const FeedBackImg = styled.img`
@@ -85,6 +94,10 @@ const FeedBackImg = styled.img`
     left: 0;
 
     width: 50%;
+
+    ${media.tablet} {
+        width: 100%;
+    }
 `
 
 const BgCards = styled.img`

@@ -2,13 +2,16 @@ import styled from 'styled-components';
 import { GradientOverlay } from '../gradientOverlay';
 
 const AppWrapper = styled.section`
+    @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
     scroll-snap-align: start;
-    background-color: #1D202D;
     height: 100vh;
     display:flex;
     flex-flow: column nowrap;
     align-items:flex-end;
     justify-content:center;
+
+    overflow: hidden;
 
     position: relative;
     scroll-snap-align: start;
@@ -38,6 +41,7 @@ const Card = styled.div`
     }
 
     h1 {
+        margin: 0;
         color:white;
         font-size: 90px;
         font-weight: 400;
@@ -55,6 +59,8 @@ const Card = styled.div`
         color:white;
         font-size: 20px;
         font-family: Poppins;
+
+        opacity: 0.8;
     }
 `;
 
@@ -66,8 +72,7 @@ const BgAppImage = styled.img`
     @media(max-width:600px){
         left: 4px;
     }
-    height: auto;
-    max-width: 90vw;
+    height: 100%;
 `
 
 export function AppSection(){

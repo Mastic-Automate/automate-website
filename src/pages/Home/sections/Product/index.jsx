@@ -3,9 +3,12 @@ import { Button } from '../../../../components/Button'
 
 import {GradientOverlay} from '../gradientOverlay'
 
+const media = {
+    tablet: `@media only screen and (max-width: 768px)`,
+}
+
 const ProductWrapper = styled.section`
-    background-color: #1D202D;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
     height: 100vh;
     display:flex;
     flex-flow: column nowrap;
@@ -19,11 +22,11 @@ const ProductWrapper = styled.section`
     }
 
     h1{
+        margin: 0;
         font-family: 'Modak', cursive;
         font-weight: 400;
         line-height: 60px;
         font-size: 91px;
-        text-align:center;
 
         @media(max-width: 800px){
             font-size: 60px;
@@ -33,7 +36,9 @@ const ProductWrapper = styled.section`
         }
     }
     p{
+        font-family: Poppins;
         font-size: 20px;
+        opacity: 0.8;
     }
 `
 
@@ -52,6 +57,7 @@ const Card = styled.div`
     flex-direction: column;
     gap: 20px;
     align-items: center;
+
     @media(min-width: 400px){
         gap: 50px;
         align-items: flex-start;
@@ -59,6 +65,10 @@ const Card = styled.div`
 
     > * {
         z-index: 2;
+    }
+
+    & > div {
+        margin-bottom: 20px;
     }
 `;
 
@@ -69,6 +79,13 @@ const ProductImg = styled.img`
     z-index: 0;
     width: 50%;
     height: auto;
+
+    ${media.tablet} {
+        width: 100%;
+        bottom: -100px;
+        left: 0;
+    }
+
 `
 
 export function ProductSection(){
@@ -81,11 +98,14 @@ export function ProductSection(){
 
             <Container>
                 <Card>
-                    <h1>NOSSO PRODUTO</h1>
-                    <p>
-                        Nosso dispositivo é capaz de monitorar o solo de um vaso de planta e mante-lo úmido para garantir o crescimento saudável de sua planta
-                    </p>
-                    <Button type="primary">
+                    <div>
+                        <h1>NOSSO PRODUTO</h1>
+                        <p>
+                            Nosso dispositivo é capaz de monitorar o solo de um vaso de planta e mante-lo úmido para garantir o crescimento saudável de sua planta
+                        </p>
+                    </div>
+                    
+                    <Button>
                         Comprar
                     </Button>
                 </Card>

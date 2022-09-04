@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 
+const media = {
+    tablet: `@media only screen and (max-width: 768px)`,
+}
+
 const Container = styled.div`
-    max-width: 600px;
+    max-width: 550px;
     width: 100%;
     max-height: 390px;
     background-color:rgba(31, 35, 53, .8);
@@ -19,11 +23,14 @@ const Container = styled.div`
 const Title = styled.h2`
     font-family: Poppins;
     font-size: 32px;
-    @media(max-width: 600px){
-        font-size: 16px;
-    }
     font-weight: bold;
     color: white;
+
+    ${media.tablet} {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
 `
 
 export function QuestionCard({title, children}) {
