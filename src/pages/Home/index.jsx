@@ -28,7 +28,7 @@ const Container = styled.div`
 export function Home(){
     return (
         <>
-            <Header />    
+            <Header />
             <Container>
                 <HeroSection />
                 <ProblematicSection />
