@@ -43,7 +43,7 @@ export function Header(){
             <Links>
                 <Link href="#app-section">Nosso App</Link>
                 <Link href="#product-section">Nosso produto</Link>
-                <Link href="#comments-section">Sobre nós</Link>
+                <Link href="#about-section">Sobre nós</Link>
             </Links>
         </Container>
     )

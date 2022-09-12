@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Header } from '../../components/Header'
+import { AboutSection } from './sections/About'
 import { AppSection } from './sections/App'
 import { CommentsSection } from './sections/Comments'
 import { HeroSection } from './sections/Hero'
@@ -34,6 +35,7 @@ export function Home(){
                 <ProblematicSection />
                 <AppSection />
                 <ProductSection />
+                <AboutSection />
                 <CommentsSection />
             </Container>
         </>
