@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Header } from '../../components/Header'
 import { AppSection } from './sections/App'
 import { CommentsSection } from './sections/Comments'
 import { HeroSection } from './sections/Hero'
@@ -26,12 +27,15 @@ const Container = styled.div`
 
 export function Home(){
     return (
-        <Container>
-            <HeroSection />
-            <ProblematicSection />
-            <AppSection />
-            <ProductSection />
-            <CommentsSection />
-        </Container>
+        <>
+            <Header />
+            <Container>
+                <HeroSection />
+                <ProblematicSection />
+                <AppSection />
+                <ProductSection />
+                <CommentsSection />
+            </Container>
+        </>
     )
 }

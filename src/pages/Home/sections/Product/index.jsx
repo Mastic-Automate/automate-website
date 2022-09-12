@@ -90,7 +90,7 @@ const ProductImg = styled.img`
 
 export function ProductSection(){
     return (
-        <ProductWrapper>
+        <ProductWrapper id="product-section">
             <GradientOverlay />
             <ProductImg 
                 src="/img/automate-product.png"
