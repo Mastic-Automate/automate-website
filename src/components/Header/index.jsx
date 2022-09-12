@@ -39,6 +39,7 @@ export function Header(){
         <Container>
             <Logo 
                 src="/img/automate-logo.png"
+                alt='Logo do Automate, que consiste na palavra "Automate" escrita de forma arredondada a lembrar um tomate'
             />
             <Links>
                 <Link href="#app-section">Nosso App</Link>

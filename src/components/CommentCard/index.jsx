@@ -23,6 +23,7 @@ const Container = styled.div`
     p {
         font-size: 24px;
         color: white;
+        font-family: Poppins;
     }
 `
 const Stars = styled.div`
@@ -41,6 +42,7 @@ const BottomSection = styled.div`
     span{
         font-size: 24px;
         color: #676767;
+        font-family: Poppins;
     }
 `
 const ProfilePicture = styled.img`

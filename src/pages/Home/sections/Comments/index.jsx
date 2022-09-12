@@ -121,6 +121,7 @@ export function CommentsSection(){
                 <Column>
                     <FeedBackImg 
                         src="/img/feedback.png"
+                        alt="Duas pessoas acessando a internet e escrevendo avaliações sobre algum produto"
                     />
                 </Column>
 
