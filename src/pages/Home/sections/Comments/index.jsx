@@ -111,7 +111,7 @@ const BgCards = styled.img`
 
 export function CommentsSection(){
     return (
-        <CommentsWrapper>
+        <CommentsWrapper id="comments-section">
             <GradientOverlay />
             <BgCards 
                 src="/img/feedback-cards.png"

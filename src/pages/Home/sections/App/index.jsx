@@ -75,7 +75,7 @@ const BgAppImage = styled.img`
 
 export function AppSection(){
     return (
-        <AppWrapper>
+        <AppWrapper id="app-section">
             <BgAppImage 
                 src="/img/app1.png"
             />
