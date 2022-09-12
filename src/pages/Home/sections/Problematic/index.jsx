@@ -1,7 +1,9 @@
 import styled from "styled-components"
+import {CaretLeft, CaretRight} from "phosphor-react";
 
 import {QuestionCard} from './QuestionCard'
 import { GradientOverlay } from "../gradientOverlay";
+import { ArrowRight } from "phosphor-react";
 
 const media = {
     tablet: `@media only screen and (max-width: 768px)`,
@@ -29,6 +31,18 @@ const Container= styled.div`
     
     margin:0 auto;
     justify-content: center;
+`;
+
+const ContainerArrows = styled.div`
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    position: absolute;
+
+    top: 50%;
+    z-index: 2;
 `;
 
 const Section = styled.div`
@@ -122,9 +136,19 @@ const CardsQuestionsImageBg = styled.img`
 export function ProblematicSection(){
     return (
         <ProblematicWrapper>
-            <Section>
+            <Section id="section2">
                 <GradientOverlay />
                 <Container>
+                    <ContainerArrows>    
+                        
+                        <CaretRight size={80} weight="bold" color="none"/>
+
+                        <a href="#section2.1">
+                            <CaretRight size={80} weight="bold" color="white"/>
+                        </a>
+                        
+                    </ContainerArrows>
+
                     <CardsQuestionsImageBg 
                         src="/img/Cards_pesquisa.png"
                     />
@@ -157,9 +181,21 @@ export function ProblematicSection(){
             </Section>
 
             
-            <Section>
+            <Section id="section2.1">
             <GradientOverlay />
                 <Container>
+                    <ContainerArrows>    
+
+                        <a href="#section2">
+                            <CaretLeft size={80} weight="bold" color="white"/>
+                        </a>
+                        
+                        <a href="#section2.2">
+                            <CaretRight size={80} weight="bold" color="white"/>
+                        </a>
+                        
+                    </ContainerArrows>
+
                     <CardsQuestionsImageBg 
                         src="/img/Cards_pesquisa.png"
                     />
@@ -187,9 +223,15 @@ export function ProblematicSection(){
                 </Container>
             </Section>
             
-            <Section>
+            <Section id="section2.2">
             <GradientOverlay />
-                <Container>
+                <Container> 
+                    <ContainerArrows>          
+                        <a href="#section2.1">
+                            <CaretLeft size={80} weight="bold" color="white"/>
+                        </a>          
+                    </ContainerArrows>
+
                     <CardsQuestionsImageBg 
                         src="/img/Cards_pesquisa.png"
                     />
