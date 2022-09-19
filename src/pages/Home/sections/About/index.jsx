@@ -86,6 +86,7 @@ export function AboutSection(){
                     </p>
                     <Logo 
                         src="/img/enterprise-logo.png"
+                        alt="A logo da Mastic, que consiste em uma árvore composta por circúitos e o nome da empresa escrito por cima"
                     />
                     <WebsiteButton onClick={()=> {window.open('http://mastic-website-deploy.vercel.app/', '_blank')}}>
                         Acesse nosso website

@@ -3,7 +3,6 @@ import {CaretLeft, CaretRight} from "phosphor-react";
 
 import {QuestionCard} from './QuestionCard'
 import { GradientOverlay } from "../gradientOverlay";
-import { ArrowRight } from "phosphor-react";
 
 const media = {
     tablet: `@media only screen and (max-width: 768px)`,
@@ -174,6 +173,7 @@ export function ProblematicSection(){
                         >
                         <img 
                             src="/img/pergunta2.png"
+                            alt="Um gráfico indicando os interesses dos participantes da pesquisa, indicando que a maioria têm interesse em uma renda extra de forma prática"
                         />
                         </QuestionCard>
                     </Column>
@@ -217,6 +217,7 @@ export function ProblematicSection(){
                         <QuestionCard title="Qual o valor máximo que você pagaria em um dispositivo desses?">
                             <img 
                                 src="/img/pergunta13.png"
+                                alt="Um gráfico apontando uma pesquisa sobre o preço que nosso público alvo está disposto a pagar, indicando que a maioria pagaria entre 70 e 80 reais"
                             />
                         </QuestionCard>
                     </Column>

@@ -78,6 +78,7 @@ export function AppSection(){
         <AppWrapper id="app-section">
             <BgAppImage 
                 src="/img/app1.png"
+                alt="Um celular com o aplicativo Automate aberto na home, com enfoque em suas plantas"
             />
             <GradientOverlay />
             <Container>
