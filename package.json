@@ -10,6 +10,10 @@
   },
   "dependencies": {
     "@fontsource/oswald": "^4.5.10",
+    "brpix-api-node": "^0.1.6-alpha.2",
+    "buffer": "^6.0.3",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
     "phosphor-react": "^1.4.1",
     "pix-charge": "^1.1.0",
     "qrcode": "^1.5.1",
