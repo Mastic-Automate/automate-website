@@ -11,6 +11,9 @@
   "dependencies": {
     "@fontsource/oswald": "^4.5.10",
     "phosphor-react": "^1.4.1",
+    "pix-charge": "^1.1.0",
+    "qrcode": "^1.5.1",
+    "qrcode-pix": "4.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",

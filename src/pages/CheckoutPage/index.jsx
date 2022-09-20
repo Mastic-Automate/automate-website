@@ -1,50 +1,86 @@
 import React from 'react';
-import './CheckoutPage.css';
-import holographicTomato from '/img/tomateHolografico.png';
 
-function CheckoutPage_address() {
+import styled from 'styled-components';
+import PixCard from '../../components/PixCard';
+import QrCode from '../../components/qrCode';
+
+// import {GradientOverlay} from '../gradientOverlay';
+
+const media = {
+    tablet: `@media only screen and (max-width: 768px)`,
+}
+
+const CheckoutPageWrapper = styled.section`
+    background-color: #1D202D;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+    h1, p {
+        color: white;
+        z-index:2;
+    }
+
+    h1{
+        margin: 0;
+        font-family: 'Modak', cursive;
+        font-weight: 400;
+        line-height: 60px;
+        font-size: 91px;
+
+        @media(max-width: 800px){
+            font-size: 60px;
+        }
+        @media(max-width: 600px){
+            font-size: 40px;
+        }
+    }
+    p{
+        font-family: Poppins;
+        font-size: 20px;
+        opacity: 0.8;
+    }
+`
+
+const Container = styled.div`
+    width: 90%;
+    max-width: 1300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+    margin: 0 auto;
+`;
+
+const CheckoutPageIllustration = styled.img`
+    width: 100%;
+    max-width: 500px;
+
+    margin-bottom: -50px;
+`;
+
+function CheckoutPage() {
     return (
-        <section className='checkout-wrapper'>
-            <div className='col'>
-                <div className='form-wrapper'>
-                    <form>
-                        <h1 className='primary-title'>Checkout</h1>
-                        <div className="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                        </div>
-                        <div className="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
-                        </div>
-                        <div className="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <div className='form-group row'>
-                                <input type="number" min={1} max={12} maxLength={2} className="form-control" id="mes" placeholder="Mês" />
-                                <input type="number" min={1} max={31} maxLength={2} className="form-control" id="dia" placeholder="Dia" />
-                                <input type="number" min={1} max={999} maxLength={3} className="form-control" id="cvv" placeholder="CVV" />
-                            </div>
-                        </div>
-                        <div className="form-group">
-                            <label for="exampleInputEmail1">Nome Cartão de Crédito</label>
-                            <input type="text" className="form-control" id="nameCreditCard" placeholder="Enter name" />
-                        </div>
-                        <div className="form-group">
-                            <div className='form-check'>
-                                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                                <label className="form-check-label" for="exampleCheck1">Eu concordo com os <span className='form-check-label link'>Termos e Condições</span></label>
-                            </div>
-                            <button type="submit" className="btn btn-primary">Encomendar</button>
-                        </div>    
-                    </form>
-                </div>
-            </div>
-            <div className='col bg-primary'>
-                <img src={holographicTomato} alt='Tomate holográfico'></img>
-            </div>
-        </section>
+        <CheckoutPageWrapper>
+            <Container>
+                <CheckoutPageIllustration 
+                    src='/img/checkoutpage-illustration.svg'
+                />
+
+                <PixCard>
+                    <QrCode />
+                </PixCard>
+                
+            </Container>
+        </CheckoutPageWrapper>
     )
     
 }
 
-export default CheckoutPage_address;
+export default CheckoutPage;
