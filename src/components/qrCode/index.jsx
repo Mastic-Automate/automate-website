@@ -39,7 +39,7 @@ export function QrCode() {
         codePayload.getQRCode().then(strBase64 => {
             setQrCode(strBase64)
         })
-    }, [])
+    }, []);
   
   
     return (
