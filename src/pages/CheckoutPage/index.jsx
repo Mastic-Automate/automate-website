@@ -2,8 +2,8 @@ import React from 'react';
 import { useEffect } from 'react';
 
 import styled from 'styled-components';
-import PixCard from '../../components/PixCard';
-import QrCode from '../../components/qrCode';
+import {PixCard} from '../../components/PixCard';
+import {QrCode} from '../../components/qrCode';
 
 // import {GradientOverlay} from '../gradientOverlay';
 

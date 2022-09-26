@@ -15,7 +15,7 @@ const Container = styled.div`
 
 `
 
-export default function PixCard({children}) {
+export function PixCard({children}) {
     return (
         <Container>
             {children}
