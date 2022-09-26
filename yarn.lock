@@ -453,7 +453,7 @@ browserslist@^4.20.2:
 
 brpix-api-node@^0.1.6-alpha.2:
   version "0.1.6-alpha.2"
-  resolved "https://registry.npmjs.org/brpix-api-node/-/brpix-api-node-0.1.6-alpha.2.tgz"
+  resolved "https://registry.yarnpkg.com/brpix-api-node/-/brpix-api-node-0.1.6-alpha.2.tgz#28964ff1383af267f1302f05010c154c0e1bc501"
   integrity sha512-tJlNLmzHrR6qwwD8NSLQ3cIJoTChDAtQdbpskn1V8O0tyXEVvP+k50pcL7Xmlcye4dC9CjnUcai9rhakqEnJdg==
   dependencies:
     axios "^0.21.1"

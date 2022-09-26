@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 
 import styled from 'styled-components';
 import PixCard from '../../components/PixCard';
@@ -67,6 +68,8 @@ const CheckoutPageIllustration = styled.img`
 
 function CheckoutPage() {
     return (
+        
+
         <CheckoutPageWrapper>
             <Container>
                 <CheckoutPageIllustration 

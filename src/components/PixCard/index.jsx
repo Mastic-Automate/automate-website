@@ -8,7 +8,6 @@ const Container = styled.div`
     background-color:rgba(31, 35, 53, .8);
     border-radius: 16px;
     border: 1px solid #263238;
-    padding: 30px;
     box-sizing:border-box;
     backdrop-filter: blur(10px);
 
