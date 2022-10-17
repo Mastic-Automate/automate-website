@@ -1,7 +1,6 @@
 import { QrCodePix } from 'qrcode-pix';
 import { useEffect, useState } from 'react';
 import styled from "styled-components";
-import { CopyPastButton } from '../CopyPasteButton';
 
 const QrCodeWrapper = styled.div`
     width: 100%;
@@ -56,7 +55,7 @@ export function QrCode() {
       
       <QrCodeWrapper>
         <img src={qrCode} />
-        <p>{payload} <CopyPastButton /> </p>
+        <p>{payload}</p>
       </QrCodeWrapper>
     )
 }
