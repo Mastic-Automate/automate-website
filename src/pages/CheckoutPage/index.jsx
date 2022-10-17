@@ -78,6 +78,7 @@ function CheckoutPage() {
 
                 <PixCard>
                     <QrCode />
+                    
                 </PixCard>
                 
             </Container>

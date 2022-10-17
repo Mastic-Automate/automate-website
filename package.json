@@ -17,7 +17,7 @@
     "phosphor-react": "^1.4.1",
     "pix-charge": "^1.1.0",
     "qrcode": "^1.5.1",
-    "qrcode-pix": "4.0.1",
+    "qrcode-pix": "5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",

@@ -1,14 +1,17 @@
-import { QRCodePayload } from 'brpix-api-node'
+import { QrCodePix } from 'qrcode-pix';
 import { useEffect, useState } from 'react';
 import styled from "styled-components";
+import { CopyPastButton } from '../CopyPasteButton';
 
 const QrCodeWrapper = styled.div`
     width: 100%;
     height: 100%;
     z-index: 99;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
 
     position: absolute;
     top: 0;
@@ -16,29 +19,36 @@ const QrCodeWrapper = styled.div`
     & > img {
       width: 100%;
       max-width: 400px;
-      margin-top: 50px;
 
+    }
+
+    & > p {
+      width: 100%;
+      max-width: 490px;
+      padding: 0 10px;
+
+      overflow: hidden;
     }
 
 `;
 
 export function QrCode() {
-    const [qrCode, setQrCode] = useState('');
+  const [qrCode, setQrCode] = useState('');
+  const [payload, setPayload] = useState('');
+  useEffect(()=> {
+    const qr = QrCodePix({
+      version: '01',
+      key: import.meta.env.VITE_PIX_KEY, //or any PIX key
+      name: import.meta.env.VITE_MERCHANT_NAME,
+      city: import.meta.env.VITE_MERCHANT_CITY,
+      message: 'Automate',
+    });
 
-    useEffect(()=> {
-        const codePayload = new QRCodePayload({
-            isStatic: true, // importante sinalizar que é pix estático
-            txid: '***', // no pix estático será preenchido com '***' automaticamente
-            pixKey: import.meta.env.VITE_PIX_KEY,
-            amount: import.meta.env.VITE_AMOUNT,
-            merchantCity: import.meta.env.VITE_MERCHANT_CITY,
-            merchantName: import.meta.env.VITE_MERCHANT_NAME,
-            uniquePayment: false, // true se deve ser usado apenas uma vez
-            // description: 'Descricao do pagamento'
-        })
-        codePayload.getQRCode().then(strBase64 => {
-            setQrCode(strBase64)
-        })
+    qr.base64().then(setQrCode);
+    setPayload(qr.payload());
+
+      
+      
     }, []);
   
   
@@ -46,6 +56,7 @@ export function QrCode() {
       
       <QrCodeWrapper>
         <img src={qrCode} />
+        <p>{payload} <CopyPastButton /> </p>
       </QrCodeWrapper>
     )
 }
