@@ -60,10 +60,14 @@ const Container = styled.div`
 `;
 
 const CheckoutPageIllustration = styled.img`
-    width: 100%;
+    width: 50%;
     max-width: 500px;
 
     margin-bottom: -50px;
+
+    ${media.tablet}{
+        display: none;
+    }
 `;
 
 function CheckoutPage() {

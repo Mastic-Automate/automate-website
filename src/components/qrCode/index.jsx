@@ -16,8 +16,10 @@ const QrCodeWrapper = styled.div`
     top: 0;
 
     & > img {
-      width: 100%;
+      width: 90%;
       max-width: 400px;
+
+      padding: 10px;
 
     }
 
