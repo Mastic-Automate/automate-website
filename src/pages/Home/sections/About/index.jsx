@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import { Button } from '../../../../components/Button';
 import { GradientOverlay } from '../gradientOverlay';
 
+const media = {
+    tablet: `@media only screen and (max-width: 768px)`,
+}
+
 const AboutWrapper = styled.section`
     scroll-snap-align: start;
     height: 100vh;
@@ -17,16 +21,38 @@ const AboutWrapper = styled.section`
 `
 
 const Container = styled.div`
-    width: 90%;
+    width: 100%;
     max-width: 1300px;
+    height: 100%;
 
     margin: 0 auto;
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
 
     z-index: 2;
+`;
+
+const Column = styled.div`
+    width: 50%;
+    height: 100%;
+    min-width: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > * {
+        z-index: 2;
+    }
+
+`;
+
+const ColumnText = styled.div`
+    width: 100%;
+
 `;
 
 const Card = styled.div`
@@ -35,6 +61,8 @@ const Card = styled.div`
     max-width: 500px;
     width: 100%;
     gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
 
     h1, p {
         z-index:2;
@@ -64,34 +92,51 @@ const Card = styled.div`
     }
 `;
 
-const Logo = styled.img`
-    width: 80%;
-    max-width: 150px;
-    height: auto;
-    align-self: center;
+const AboutIllustration = styled.img`
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+
+    width: 50%;
+
+    ${media.tablet} {
+        width: 100%;
+    }
 `
 const WebsiteButton = styled(Button)`
-    align-self: center;
+
 `
 
 export function AboutSection(){
     return (
         <AboutWrapper id="about-section">
             <GradientOverlay />
+            
             <Container>
-                <Card>
-                    <h1>Sobre nós</h1>
-                    <p>
-                        Somos a Mastic, uma empresa com o objetivo de mudar o Brasil
-                    </p>
-                    <Logo 
-                        src="/img/enterprise-logo.png"
+
+                <Column>
+                    <AboutIllustration 
+                        src="/img/about-illustration.png"
                         alt="A logo da Mastic, que consiste em uma árvore composta por circúitos e o nome da empresa escrito por cima"
                     />
-                    <WebsiteButton onClick={()=> {window.open('http://mastic-website-deploy.vercel.app/', '_blank')}}>
-                        Acesse nosso website
-                    </WebsiteButton>
-                </Card>
+                </Column>
+
+                <Column>
+                    <ColumnText>
+                        <Card>
+                            <h1>Sobre nós</h1>
+                            <p>
+                                Somos a Mastic, uma empresa com o objetivo de mudar o Brasil
+                            </p>
+                            
+                            <WebsiteButton type="primary" onClick={()=> {window.open('http://mastic-website-deploy.vercel.app/', '_blank')}}>
+                                Acesse nosso website
+                            </WebsiteButton>
+                        </Card>
+                    </ColumnText>
+                </Column>
+
+                
                 
             </Container>
         </AboutWrapper>
