@@ -129,7 +129,10 @@ export function AboutSection(){
                                 Somos a Mastic, uma empresa com o objetivo de mudar o Brasil
                             </p>
                             
-                            <WebsiteButton type="primary" onClick={()=> {window.open('http://mastic-website-deploy.vercel.app/', '_blank')}}>
+                            <WebsiteButton 
+                                type="primary" 
+                                onClick={()=> {window.open('https://mastic-next-deploy.vercel.app/', '_blank')}}
+                            >
                                 Acesse nosso website
                             </WebsiteButton>
                         </Card>

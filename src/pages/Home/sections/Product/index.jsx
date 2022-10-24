@@ -105,7 +105,10 @@ export function ProductSection(){
                         </p>
                     </div>
                     
-                    <Button type="primary">
+                    <Button 
+                        type="primary"
+                        onClick={()=> {window.location.replace('/CheckoutPage')}}
+                    >
                         Comprar
                     </Button>
                 </Card>

@@ -176,7 +176,10 @@ export function HeroSection(){
                         </div>
                         
                         <ButtonsContainer>
-                            <Button type="primary">
+                            <Button 
+                                type="primary"
+                                onClick={()=> {window.location.replace('/#about-section') }}
+                            >
                                 Mais sobre
                             </Button>
                             <Button type="secondary">
