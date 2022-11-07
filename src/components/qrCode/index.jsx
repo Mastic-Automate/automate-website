@@ -3,32 +3,25 @@ import { useEffect, useState } from 'react';
 import styled from "styled-components";
 
 const QrCodeWrapper = styled.div`
-    width: 100%;
+    width: 90%;
     height: 100%;
     z-index: 99;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    overflow: hidden;
-
-    position: absolute;
     top: 0;
 
     & > img {
       width: 90%;
-      max-width: 400px;
-
-      padding: 10px;
 
     }
 
     & > p {
-      width: 100%;
-      max-width: 490px;
-      padding: 0 10px;
+      width: 90%;
+      word-break: break-all;
 
-      overflow: hidden;
+
     }
 
 `;
