@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 
 import styled from 'styled-components';
 import {PixCard} from '../../components/PixCard';
+import { Popup } from '../../components/Popup/Popup';
 import {QrCode} from '../../components/qrCode';
 
 // import {GradientOverlay} from '../gradientOverlay';
@@ -20,11 +21,6 @@ const CheckoutPageWrapper = styled.section`
     justify-content: center;
     overflow: hidden;
     position: relative;
-
-    h1, p {
-        color: white;
-        z-index:2;
-    }
 
     h1{
         margin: 0;
@@ -57,6 +53,11 @@ const Container = styled.div`
 
 
     margin: 0 auto;
+
+    & > h1, p {
+        color: white;
+        z-index:2;
+    }
 `;
 
 const CheckoutPageIllustration = styled.img`
@@ -86,6 +87,7 @@ function CheckoutPage() {
                 </PixCard>
                 
             </Container>
+            <Popup text={"Nosso produto ainda não está disponível para venda. Porém, estamos sempre aptos à sua doação."}/>
         </CheckoutPageWrapper>
     )
     

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource/oswald": "^4.5.10",
+    "@react-navigation/native": "^6.0.13",
     "brpix-api-node": "^0.1.6-alpha.2",
     "buffer": "^6.0.3",
     "dotenv": "^16.0.2",
