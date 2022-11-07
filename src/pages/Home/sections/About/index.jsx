@@ -21,17 +21,12 @@ const AboutWrapper = styled.section`
 `
 
 const Container = styled.div`
-    width: 100%;
+    width: 90%;
     max-width: 1300px;
-    height: 100%;
 
     margin: 0 auto;
-
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-
-    z-index: 2;
+    justify-content: flex-end;
 `;
 
 const Column = styled.div`
@@ -56,13 +51,13 @@ const ColumnText = styled.div`
 `;
 
 const Card = styled.div`
+    width: 100%;
+    max-width: 500px;
+
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    width: 100%;
-    gap: 4px;
-    align-items: flex-start;
-    justify-content: flex-start;
+    gap: 20px;
+    align-items: flex-end;
 
     h1, p {
         z-index:2;
@@ -74,11 +69,14 @@ const Card = styled.div`
         font-size: 90px;
         font-weight: 400;
         font-family: 'Modak', cursive;
+        line-height: 60px;
 
         @media(max-width: 800px){
+            line-height: 30px;
             font-size: 60px;
         }
         @media(max-width: 400px){
+            line-height: 10px;
             font-size: 40px;
         }
     }
@@ -87,6 +85,7 @@ const Card = styled.div`
         color:white;
         font-size: 20px;
         font-family: Poppins;
+        text-align: right;
 
         opacity: 0.8;
     }
@@ -94,13 +93,16 @@ const Card = styled.div`
 
 const AboutIllustration = styled.img`
     position: absolute;
+    left: 0;
     bottom: 0;
-    left: 5%;
-
+    z-index: 0;
+    height: auto;
     width: 50%;
 
     ${media.tablet} {
         width: 100%;
+        bottom: 0;
+        left: 0;
     }
 `
 const WebsiteButton = styled(Button)`
@@ -111,16 +113,12 @@ export function AboutSection(){
     return (
         <AboutWrapper id="about-section">
             <GradientOverlay />
-            
+            <AboutIllustration 
+                src="/img/about-illustration.png"
+                alt="A logo da Mastic, que consiste em uma árvore composta por circúitos e o nome da empresa escrito por cima"
+            />
+
             <Container>
-
-                <Column>
-                    <AboutIllustration 
-                        src="/img/about-illustration.png"
-                        alt="A logo da Mastic, que consiste em uma árvore composta por circúitos e o nome da empresa escrito por cima"
-                    />
-                </Column>
-
                 <Column>
                     <ColumnText>
                         <Card>

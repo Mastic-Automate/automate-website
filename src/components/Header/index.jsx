@@ -11,6 +11,8 @@ const Container = styled.div`
     width: 100%;
     z-index: 2;
     display: flex;
+    align-items: center;
+    padding: 5px;
     flex-flow: row nowrap;
     align-items:center;
     justify-content: space-between;
@@ -85,7 +87,7 @@ const Link = styled.a`
 `
 const Logo = styled.img`
     width: auto;
-    height: 80px;
+    height: 64px;
     z-index: 997;
 `
 
