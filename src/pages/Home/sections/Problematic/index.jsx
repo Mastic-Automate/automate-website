@@ -24,7 +24,7 @@ const ProblematicWrapper = styled.section`
 
 const Container= styled.div`
     width: 100%;
-    max-width: 1300px;
+    max-width: 1000px;
     display:flex;
     flex-flow: row wrap;
     
@@ -41,7 +41,7 @@ const ContainerArrows = styled.div`
     position: absolute;
 
     top: 50%;
-    z-index: 2;
+    z-index: 3;
 `;
 
 const Section = styled.div`
@@ -54,7 +54,7 @@ const Section = styled.div`
     position: relative;
 
     h1 {
-        line-height: 30px;
+        line-height: 60px;
         padding-bottom: 50px;
         color: white;
         font-size: 91px;
