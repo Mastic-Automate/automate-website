@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import {PixCard} from '../../components/PixCard';
 import { Popup } from '../../components/Popup/Popup';
 import {QrCode} from '../../components/qrCode';
+import {CaretLeft} from "phosphor-react";
 
 // import {GradientOverlay} from '../gradientOverlay';
 
@@ -60,6 +61,13 @@ const Container = styled.div`
     }
 `;
 
+const GoBackButton = styled.a`
+    border: none;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+`;
+
 const CheckoutPageIllustration = styled.img`
     width: 50%;
     max-width: 500px;
@@ -85,7 +93,9 @@ function CheckoutPage() {
                     <QrCode />
                     
                 </PixCard>
-                
+                <GoBackButton href="./home">
+                    <CaretLeft size={80} weight="bold" color="white"/>
+                </GoBackButton>
             </Container>
             <Popup text={"Nosso produto ainda não está disponível para venda. Porém, estamos sempre aptos à sua doação."}/>
         </CheckoutPageWrapper>
