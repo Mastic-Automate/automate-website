@@ -132,6 +132,8 @@ const BgImage = styled.img`
     width: 100%;
     height: auto;
     z-index: 0;
+    filter: blur(3px);
+    opacity: 0.8;
 `
 
 const VideoPlayer = styled.video`
